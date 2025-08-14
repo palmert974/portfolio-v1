@@ -1,0 +1,36 @@
+:root{
+  --base: #0e1113;
+  --elevated: #151a1d;
+  --muted: #a9b1b8;
+  --accent: #d41f2a;
+  --accent-600: #b01922;
+}
+html, body { height: 100%; }
+.bg-base { background: var(--base); }
+.bg-elevated { background: var(--elevated); }
+.bg-section { background: #0c0f11; }
+.bg-accent { background: var(--accent); }
+.text-muted-2 { color: var(--muted) !important; }
+.btn-accent{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: var(--accent-600);
+  --bs-btn-hover-border-color: var(--accent-600);
+}
+.hero{
+  background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.18), transparent),
+              radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.12), transparent);
+}
+.hero-img{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.15);
+}
+.highlight{ object-fit: cover; aspect-ratio: 4/3; }
+.card, .navbar { border-radius: 14px; }
+a:focus, button:focus { outline: 2px dashed var(--accent); outline-offset: 2px; }
+@media (max-width: 576px){
+  .hero-img{ width: 120px; height: 120px; }
+}
