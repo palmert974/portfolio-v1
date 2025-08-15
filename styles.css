@@ -18,6 +18,14 @@ html, body { height: 100%; }
   --bs-btn-hover-bg: var(--accent-600);
   --bs-btn-hover-border-color: var(--accent-600);
 }
+/* Fix navbar link visibility */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.95) !important;
+  font-weight: 500;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
 .hero{
   background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.18), transparent),
               radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.12), transparent);
