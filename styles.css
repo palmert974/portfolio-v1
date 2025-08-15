@@ -58,10 +58,21 @@ html, body { height: 100%; }
   border-bottom: 1px solid #23272b;
   width: 100%;
   display: block;
+  transition: transform 0.2s ease;
+}
+.card:hover .project-img {
+  transform: scale(1.02);
 }
 
 /* Grid balance for cards */
-#projects .card { min-height: 100%; }
+#projects .card { 
+  min-height: 100%; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#projects .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+}
 #projects .row.g-4 > [class*='col-'] { display: grid; }
 #projects .row.g-4 > [class*='col-'] > .card { align-self: stretch; }
 
