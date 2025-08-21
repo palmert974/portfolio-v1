@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Tamara Palmer</title>
+    <meta name="description" content="Portfolio projects by Tamara Palmer - Full-Stack Developer showcasing React, JavaScript, and web development work." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-base text-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent sticky-top" aria-label="Primary">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Tamara Palmer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Projects Hero -->
+    <section class="py-4 bg-base">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="display-4 fw-bold mb-3 animate-fade-in">My Projects</h1>
+          <p class="lead text-muted-2 mb-0 animate-fade-in-delay">
+            Showcasing my journey in full-stack development, from creative hackathon projects to production-ready applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-4 bg-base">
+      <div class="container">
+        <div class="row g-4">
+          <!-- SonicWave -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
+              <img class="card-img-top project-img" src="assets/sonicwave-card.png" alt="SonicWave app screenshot" style="object-fit:cover; aspect-ratio: 16/9;">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2">
+                  <h3 class="h4 mb-0">SonicWave</h3>
+                  <span class="badge bg-accent">Hackathon Winner</span>
+                </div>
+                <p class="text-muted-2 mb-3">
+                  Collaborative music creation platform developed during a 24-hour hackathon. Features real-time audio synthesis, 
+                  user authentication, and responsive design patterns. Built with vanilla JavaScript and Web Audio API for optimal performance.
+                </p>
+                <div class="mb-3">
+                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
+                  <ul class="small text-muted-2 mb-0">
+                    <li>Real-time collaborative music creation</li>
+                    <li>Interactive sound synthesis interface</li>
+                    <li>User authentication and session management</li>
+                    <li>Mobile-responsive design</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge text-bg-secondary">JavaScript</span>
+                  <span class="badge text-bg-secondary">HTML5</span>
+                  <span class="badge text-bg-secondary">CSS3</span>
+                  <span class="badge text-bg-secondary">Web Audio API</span>
+                  <span class="badge text-bg-secondary">Vercel</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="https://github.com/palmert974/SonicWave" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-github"></i> View Code
+                  </a>
+                  <a href="https://sonicwave-delta.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TuneTracker -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
+              <img class="card-img-top project-img" src="assets/tunetracker-card.png" alt="TuneTracker screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/tunetracker-card.svg'">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2">
+                  <h3 class="h4 mb-0">TuneTracker</h3>
+                  <span class="badge bg-success">Full-Stack</span>
+                </div>
+                <p class="text-muted-2 mb-3">
+                  Full-stack music library management application with complete CRUD operations. Implements modern React patterns 
+                  including hooks, context API for state management, and RESTful API integration.
+                </p>
+                <div class="mb-3">
+                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
+                  <ul class="small text-muted-2 mb-0">
+                    <li>Complete CRUD functionality for music library</li>
+                    <li>Advanced search and filtering capabilities</li>
+                    <li>State management with React Context</li>
+                    <li>RESTful API integration</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge text-bg-secondary">React</span>
+                  <span class="badge text-bg-secondary">JavaScript</span>
+                  <span class="badge text-bg-secondary">Bootstrap</span>
+                  <span class="badge text-bg-secondary">REST API</span>
+                  <span class="badge text-bg-secondary">Node.js</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="https://github.com/palmert974/TuneTracker" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-github"></i> View Code
+                  </a>
+                  <a href="https://tunetracker-one.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BandSite -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
+              <img class="card-img-top project-img" src="assets/bandsite-card.png" alt="BandSite screenshot" style="object-fit:cover; aspect-ratio: 16/9;" onerror="this.src='assets/bandsite-card.svg'">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2">
+                  <h3 class="h4 mb-0">BandSite</h3>
+                  <span class="badge bg-info text-dark">Multi-Page</span>
+                </div>
+                <p class="text-muted-2 mb-3">
+                  Multi-page responsive website for a music artist featuring dynamic content loading and comment system integration. 
+                  Built with mobile-first approach and modern JavaScript for optimal performance.
+                </p>
+                <div class="mb-3">
+                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
+                  <ul class="small text-muted-2 mb-0">
+                    <li>Dynamic content loading with API integration</li>
+                    <li>Interactive comment system</li>
+                    <li>Mobile-first responsive design</li>
+                    <li>Form validation and error handling</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge text-bg-secondary">HTML5</span>
+                  <span class="badge text-bg-secondary">SCSS/CSS3</span>
+                  <span class="badge text-bg-secondary">JavaScript</span>
+                  <span class="badge text-bg-secondary">Axios</span>
+                  <span class="badge text-bg-secondary">REST API</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="https://github.com/palmert974/bandsite" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-github"></i> View Code
+                  </a>
+                  <a href="https://bandsite-black.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Birdwatch -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
+              <img class="card-img-top project-img" src="assets/birdwatch-card.png" alt="Birdwatch screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/birdwatch-card.svg'">
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2">
+                  <h3 class="h4 mb-0">Birdwatch Pro</h3>
+                  <span class="badge bg-warning text-dark">React App</span>
+                </div>
+                <p class="text-muted-2 mb-3">
+                  Interactive birdwatching journal application with advanced filtering and data persistence. 
+                  Demonstrates component-based architecture and modern React patterns.
+                </p>
+                <div class="mb-3">
+                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
+                  <ul class="small text-muted-2 mb-0">
+                    <li>Advanced filtering and search functionality</li>
+                    <li>Local storage for data persistence</li>
+                    <li>Component-based architecture</li>
+                    <li>Accessible UI components</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge text-bg-secondary">React</span>
+                  <span class="badge text-bg-secondary">JavaScript</span>
+                  <span class="badge text-bg-secondary">Bootstrap</span>
+                  <span class="badge text-bg-secondary">Local Storage</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="https://github.com/palmert974/Birdwatch-pro" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-github"></i> View Code
+                  </a>
+                  <a href="https://birdwatch-pro.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-base">
+      <div class="container text-center">
+        <h2 class="h3 mb-3">Let's Build Something Together</h2>
+        <p class="text-muted-2 mb-4">I'm always excited to work on new projects and collaborate with fellow developers.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="contact.html" class="btn btn-accent">Get In Touch</a>
+          <a href="https://github.com/palmert974" target="_blank" class="btn btn-outline-light">View GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-elevated border-top border-dark-subtle mt-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+              <span class="fw-semibold text-white">Tamara Palmer</span>
+              <span class="text-muted-2">• Full-Stack Developer</span>
+            </div>
+            <div class="small text-muted-2">© <span id="year"></span> All rights reserved.</div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-end gap-3">
+              <a class="text-muted-2 text-decoration-none" href="about.html">About</a>
+              <a class="text-muted-2 text-decoration-none" href="projects.html">Projects</a>
+              <a class="text-muted-2 text-decoration-none" href="contact.html">Contact</a>
+              <a href="https://github.com/palmert974" target="_blank" class="text-muted-2"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/tamara-palmer-" target="_blank" class="text-muted-2"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:TamaraPalmer013@yahoo.com" class="text-muted-2"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
