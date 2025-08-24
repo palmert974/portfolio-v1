@@ -94,7 +94,7 @@ document.querySelectorAll('a[title]').forEach(link => {
   });
 });
 
-// Form validation
+// Form validation and submission
 (function() {
   'use strict';
   
@@ -102,15 +102,87 @@ document.querySelectorAll('a[title]').forEach(link => {
   const forms = document.querySelectorAll('.needs-validation');
   
   Array.from(forms).forEach(function(form) {
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      
       if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
+        form.classList.add('was-validated');
+        return;
       }
       
-      form.classList.add('was-validated');
+      // If this is the contact form, handle with AJAX
+      if (form.id === 'contact-form') {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
+        
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            // Success - show success message
+            showFormMessage('success', 'Thank you for your message! I\'ll get back to you within 24 hours.');
+            form.reset();
+            form.classList.remove('was-validated');
+          } else {
+            // Error - show error message
+            showFormMessage('error', 'Oops! There was a problem sending your message. Please try again or email me directly.');
+          }
+        } catch (error) {
+          // Network error
+          showFormMessage('error', 'Connection error. Please check your internet and try again.');
+        } finally {
+          // Reset button
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+      } else {
+        // For other forms, just validate
+        form.classList.add('was-validated');
+      }
     }, false);
   });
+  
+  // Helper function to show form messages
+  function showFormMessage(type, message) {
+    // Remove any existing alerts
+    const existingAlert = document.querySelector('.form-alert');
+    if (existingAlert) {
+      existingAlert.remove();
+    }
+    
+    // Create new alert
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type === 'success' ? 'success' : 'danger'} alert-dismissible fade show form-alert mt-3`;
+    alertDiv.innerHTML = `
+      <i class="bi bi-${type === 'success' ? 'check-circle' : 'exclamation-circle'} me-2"></i>
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    
+    // Insert after the form
+    const form = document.getElementById('contact-form');
+    form.parentNode.appendChild(alertDiv);
+    
+    // Auto-dismiss success messages after 5 seconds
+    if (type === 'success') {
+      setTimeout(() => {
+        alertDiv.classList.remove('show');
+        setTimeout(() => alertDiv.remove(), 150);
+      }, 5000);
+    }
+  }
 })();
 
 // Active navigation highlighting and navbar scroll effect
