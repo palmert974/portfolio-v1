@@ -1,10 +1,10 @@
 // Rotating text animation
 const rotatingTexts = [
-  "responsive web applications",
-  "data-driven solutions",
-  "user-focused interfaces",
   "full-stack applications",
-  "innovative digital experiences"
+  "data pipelines and automation",
+  "REST APIs with C# and .NET",
+  "React-powered interfaces",
+  "DevOps tooling and scripting"
 ];
 
 let currentIndex = 0;
