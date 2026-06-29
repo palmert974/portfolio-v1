@@ -3,8 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects — Tamara Palmer</title>
-    <meta name="description" content="Projects by Tamara Palmer — Full-stack apps including a hackathon-winning Spotify audio player, React apps, and Node.js/MySQL platforms. Live demos available." />
+    <title>Projects | Tamara Palmer — DevOps Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Portfolio projects by Tamara Palmer — Full-stack apps including a hackathon-winning music game, DiscoverUs artist platform (React/Node/Spotify), TuneTracker CRUD app, BandSite with MySQL REST API, and Birdwatch React app. Live demos available." />
+    <meta name="keywords" content="Tamara Palmer projects, full-stack developer portfolio, React projects, Node.js, MySQL, Spotify API, hackathon, BrainStation, portfolio" />
+    <meta name="author" content="Tamara Palmer" />
+    <link rel="canonical" href="https://portfolio-v1-blond-rho.vercel.app/projects.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolio-v1-blond-rho.vercel.app/projects.html" />
+    <meta property="og:title" content="Projects | Tamara Palmer — Full-Stack Developer" />
+    <meta property="og:description" content="Hackathon-winning music game, DiscoverUs artist platform, TuneTracker, BandSite, and more. React, Node.js, MySQL, Python, C#." />
+    <meta property="og:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/sonicwave-card.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Tamara Palmer — Full-Stack Developer" />
+    <meta name="twitter:description" content="Full-stack projects: hackathon-winning music game, artist discovery platform, React apps, Node.js/MySQL. Live demos available." />
+    <meta name="twitter:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/sonicwave-card.png" />
+
     <meta name="theme-color" content="#d41f2a" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,13 +47,23 @@
     </nav>
     
     <!-- Projects Hero -->
-    <section class="py-4 bg-base">
+    <section class="py-5 bg-base" style="background: radial-gradient(1200px 300px at 50% -10%, rgba(212,31,42,0.07), transparent) !important;">
       <div class="container">
         <div class="text-center">
           <h1 class="display-4 fw-bold mb-3 animate-fade-in">My Projects</h1>
-          <p class="lead text-muted-2 mb-0 animate-fade-in-delay">
-            Showcasing my journey in full-stack development, from creative hackathon projects to production-ready applications.
+          <p class="lead text-muted-2 mb-4 animate-fade-in-delay">
+            Full-stack applications built with React, Node.js, C#/.NET, Python, and SQL. From hackathon wins to production platforms.
           </p>
+          <div class="d-flex justify-content-center flex-wrap gap-2 animate-fade-up">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">C# / .NET</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">REST API</span>
+            <span class="tech-badge">Spotify API</span>
+            <span class="tech-badge">Redux</span>
+          </div>
         </div>
       </div>
     </section>
@@ -45,42 +72,108 @@
     <section class="py-4 bg-base">
       <div class="container">
         <div class="row g-4">
+
+          <!-- DiscoverUs — Capstone Project (FEATURED) -->
+          <div class="col-12">
+            <div class="card bg-elevated border-0 shadow-sm project-card hover-lift" style="border: 1px solid rgba(212,31,42,0.25) !important;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="d-flex align-items-center justify-content-center h-100 p-4" style="background: linear-gradient(135deg, rgba(212,31,42,0.12), rgba(14,17,19,0.8)); min-height: 280px;">
+                    <div class="text-center">
+                      <i class="bi bi-music-note-beamed text-accent" style="font-size: 4rem;"></i>
+                      <div class="mt-3 fw-bold text-white fs-5">DiscoverUs</div>
+                      <div class="small text-muted-2">Independent Artist Platform</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-2">
+                      <h3 class="h4 mb-0">DiscoverUs — Artist Discovery Platform</h3>
+                      <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-accent">Capstone Project</span>
+                        <span class="badge" style="background: rgba(255,193,7,0.2); color: #ffc107;">In Progress</span>
+                      </div>
+                    </div>
+                    <div class="small text-muted-2 mb-2"><i class="bi bi-people me-1"></i>Solo • Full-Stack • React + Node.js + Spotify API</div>
+                    <p class="text-muted-2 mb-3">
+                      Full-stack platform supporting independent musicians — artist scouting, curated playlists, music submission pipeline, and educational resources on licensing and the music industry. Built with React, Node.js, Express, Spotify API, Redux, and Material UI.
+                    </p>
+                    <div class="row g-3 mb-3">
+                      <div class="col-sm-6">
+                        <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Problem Solved</h6>
+                        <p class="small text-muted-2 mb-0">Independent artists lack a centralized platform for discovery, playlist submission, and industry education — DiscoverUs fills that gap.</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
+                        <ul class="small text-muted-2 mb-0 ps-3">
+                          <li>Artist scouting &amp; curated playlists</li>
+                          <li>Music submission system + admin dashboard</li>
+                          <li>Browse, Login, SignUp, Artist Profile pages</li>
+                          <li>Redux state management</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-1 mb-3">
+                      <span class="badge text-bg-secondary">React</span>
+                      <span class="badge text-bg-secondary">Node.js</span>
+                      <span class="badge text-bg-secondary">Express</span>
+                      <span class="badge text-bg-secondary">Spotify API</span>
+                      <span class="badge text-bg-secondary">Redux</span>
+                      <span class="badge text-bg-secondary">Material UI</span>
+                      <span class="badge text-bg-secondary">SASS</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-2 flex-wrap">
+                      <a href="https://github.com/palmert974/CapstoneProject" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                        <i class="bi bi-github"></i> View Code
+                      </a>
+                      <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
+                        <i class="bi bi-clock me-1"></i>Live Demo — Coming Soon
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- SonicWave -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/sonicwave-card.png" alt="SonicWave app screenshot" style="object-fit:cover; aspect-ratio: 16/9;">
+              <img class="card-img-top project-img" src="assets/sonicwave-card.png" alt="SonicWave music game screenshot" style="object-fit:cover; aspect-ratio: 16/9;">
               <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-start justify-content-between mb-2">
-                  <h3 class="h4 mb-0">Sonic Wave Audio Player</h3>
+                <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
+                  <h3 class="h4 mb-0">Sonic Wave</h3>
                   <span class="badge bg-accent">Hackathon Winner</span>
                 </div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-people me-1"></i>Pair Program • React • 48 hrs</div>
                 <p class="text-muted-2 mb-3">
-                  Hackathon-winning audio player built in 48 hours. Integrates the Spotify API for streaming and playlist management,
-                  with OAuth authentication, real-time track control, and a fully responsive UI.
+                  Hackathon-winning music guessing game built in 48 hours. Fetches real tracks from a music API, plays 5-second audio clips, and challenges you to identify the song and artist before the reveal.
                 </p>
-                <div class="mb-3">
-                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
-                  <ul class="small text-muted-2 mb-0">
-                    <li>Spotify API integration — streaming and playlist management</li>
-                    <li>OAuth authentication flow</li>
-                    <li>REST API backend with Node.js / Express</li>
-                    <li>Responsive React UI built in 48 hours</li>
-                  </ul>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
+                    <p class="small text-muted-2 mb-0">Build a fun, interactive music app from scratch in a 48-hour hackathon.</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Solution</div>
+                    <p class="small text-muted-2 mb-0">Paired React routing with a live music API to power a fast, responsive guessing game.</p>
+                  </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
                   <span class="badge text-bg-secondary">React</span>
-                  <span class="badge text-bg-secondary">Node.js</span>
-                  <span class="badge text-bg-secondary">Express</span>
-                  <span class="badge text-bg-secondary">Spotify API</span>
-                  <span class="badge text-bg-secondary">Vercel</span>
+                  <span class="badge text-bg-secondary">React Router</span>
+                  <span class="badge text-bg-secondary">Music API</span>
+                  <span class="badge text-bg-secondary">SCSS</span>
+                  <span class="badge text-bg-secondary">axios</span>
                 </div>
-                <div class="mt-auto d-flex gap-2">
+                <div class="mt-auto d-flex gap-2 flex-wrap">
                   <a href="https://github.com/palmert974/SonicWave" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
                     <i class="bi bi-github"></i> View Code
                   </a>
-                  <a href="https://sonicwave-delta.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
-                  </a>
+                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
+                    <i class="bi bi-clock me-1"></i>Demo — Being Updated
+                  </span>
                 </div>
               </div>
             </div>
@@ -91,22 +184,23 @@
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
               <img class="card-img-top project-img" src="assets/tunetracker-card.png" alt="TuneTracker screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/tunetracker-card.svg'">
               <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-start justify-content-between mb-2">
+                <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">TuneTracker</h3>
                   <span class="badge bg-success">Full-Stack</span>
                 </div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo • React + REST API</div>
                 <p class="text-muted-2 mb-3">
-                  Full-stack music library management application with complete CRUD operations. Implements modern React patterns 
-                  including hooks, context API for state management, and RESTful API integration.
+                  Full-stack music library management app with complete CRUD operations, React Context state management, and a RESTful API backend. Built to demonstrate modern React patterns at scale.
                 </p>
-                <div class="mb-3">
-                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
-                  <ul class="small text-muted-2 mb-0">
-                    <li>Complete CRUD functionality for music library</li>
-                    <li>Advanced search and filtering capabilities</li>
-                    <li>State management with React Context</li>
-                    <li>RESTful API integration</li>
-                  </ul>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
+                    <p class="small text-muted-2 mb-0">Users needed a clean interface to manage and search personal music libraries.</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
+                    <p class="small text-muted-2 mb-0">Complete CRUD app with advanced filtering, Context-powered state, and live API integration.</p>
+                  </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
                   <span class="badge text-bg-secondary">React</span>
@@ -132,22 +226,23 @@
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
               <img class="card-img-top project-img" src="assets/bandsite-card.png" alt="BandSite screenshot" style="object-fit:cover; aspect-ratio: 16/9;" onerror="this.src='assets/bandsite-card.svg'">
               <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-start justify-content-between mb-2">
+                <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">BandSite</h3>
-                  <span class="badge bg-info text-dark">Multi-Page</span>
+                  <span class="badge bg-info text-dark">Full-Stack</span>
                 </div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo • Node.js + MySQL REST API</div>
                 <p class="text-muted-2 mb-3">
-                  Full-stack music platform with dynamic concert listings and a live comment system. REST API backend with
-                  optimized SQL queries; DOM manipulation for seamless content loading without page refreshes.
+                  Multi-page music platform with a custom REST API backend. Dynamic concert listings and a live comment system — optimized SQL queries power seamless, real-time DOM updates without page reloads.
                 </p>
-                <div class="mb-3">
-                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
-                  <ul class="small text-muted-2 mb-0">
-                    <li>REST API backend — Node.js with MySQL</li>
-                    <li>Dynamic concert listings and comment system</li>
-                    <li>Optimized SQL queries for performance</li>
-                    <li>DOM manipulation for live content updates</li>
-                  </ul>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
+                    <p class="small text-muted-2 mb-0">Build a dynamic music site backed by a custom API and relational database.</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
+                    <p class="small text-muted-2 mb-0">Live comment system + concert listings with optimized MySQL queries and DOM-driven UX.</p>
+                  </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
                   <span class="badge text-bg-secondary">Node.js</span>
@@ -171,24 +266,25 @@
           <!-- Birdwatch -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/birdwatch-card.png" alt="Birdwatch screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/birdwatch-card.svg'">
+              <img class="card-img-top project-img" src="assets/birdwatch-card.png" alt="Birdwatch Pro screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/birdwatch-card.svg'">
               <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-start justify-content-between mb-2">
+                <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">Birdwatch Pro</h3>
                   <span class="badge bg-warning text-dark">React App</span>
                 </div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo • React • Component Architecture</div>
                 <p class="text-muted-2 mb-3">
-                  Interactive birdwatching journal application with advanced filtering and data persistence. 
-                  Demonstrates component-based architecture and modern React patterns.
+                  Interactive birdwatching journal with advanced filtering, search, and data persistence via local storage. Demonstrates clean component-based architecture and accessible UI patterns.
                 </p>
-                <div class="mb-3">
-                  <h6 class="small fw-bold text-uppercase text-muted-2 mb-2">Key Features</h6>
-                  <ul class="small text-muted-2 mb-0">
-                    <li>Advanced filtering and search functionality</li>
-                    <li>Local storage for data persistence</li>
-                    <li>Component-based architecture</li>
-                    <li>Accessible UI components</li>
-                  </ul>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
+                    <p class="small text-muted-2 mb-0">Build a data-driven journaling app with persistent state and accessible filtering.</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
+                    <p class="small text-muted-2 mb-0">Accessible React app with local storage persistence, multi-filter search, and modular components.</p>
+                  </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
                   <span class="badge text-bg-secondary">React</span>
@@ -207,6 +303,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
