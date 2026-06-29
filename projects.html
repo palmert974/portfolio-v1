@@ -63,6 +63,8 @@
             <span class="tech-badge">REST API</span>
             <span class="tech-badge">Spotify API</span>
             <span class="tech-badge">Redux</span>
+            <span class="tech-badge">Entity Framework</span>
+            <span class="tech-badge">ETL / pandas</span>
           </div>
         </div>
       </div>
@@ -263,42 +265,99 @@
             </div>
           </div>
 
-          <!-- Birdwatch -->
+          <!-- TheRewind — WOS Assessment Project -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/birdwatch-card.png" alt="Birdwatch Pro screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/birdwatch-card.svg'">
+              <div class="d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(30,30,50,0.9), rgba(14,17,19,0.95)); aspect-ratio: 16/9;">
+                <div class="text-center p-4">
+                  <i class="bi bi-film text-accent" style="font-size: 3.5rem;"></i>
+                  <div class="mt-2 fw-bold text-white fs-6">TheRewind</div>
+                  <div class="small text-muted-2">Movie Review Platform</div>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
-                  <h3 class="h4 mb-0">Birdwatch Pro</h3>
-                  <span class="badge bg-warning text-dark">React App</span>
+                  <h3 class="h4 mb-0">TheRewind</h3>
+                  <span class="badge bg-accent">WOS Assessment</span>
                 </div>
-                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo • React • Component Architecture</div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo &bull; C# / .NET MVC &bull; MySQL</div>
                 <p class="text-muted-2 mb-3">
-                  Interactive birdwatching journal with advanced filtering, search, and data persistence via local storage. Demonstrates clean component-based architecture and accessible UI patterns.
+                  Full-stack movie review platform built as a WOS assessment project. Users register, log in securely, submit movie reviews with star ratings, and manage their own entries — all protected by session-based authentication and foreign key authorization.
                 </p>
                 <div class="row g-2 mb-3">
                   <div class="col-6">
                     <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
-                    <p class="small text-muted-2 mb-0">Build a data-driven journaling app with persistent state and accessible filtering.</p>
+                    <p class="small text-muted-2 mb-0">Build a secure multi-user CRUD platform with authentication, relational data, and protected routes.</p>
                   </div>
                   <div class="col-6">
                     <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
-                    <p class="small text-muted-2 mb-0">Accessible React app with local storage persistence, multi-filter search, and modular components.</p>
+                    <p class="small text-muted-2 mb-0">Earned Exemplary marks across all rubric categories: auth, CRUD, EF relationships, validation, and code quality.</p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge text-bg-secondary">React</span>
-                  <span class="badge text-bg-secondary">JavaScript</span>
-                  <span class="badge text-bg-secondary">Bootstrap</span>
-                  <span class="badge text-bg-secondary">Local Storage</span>
+                  <span class="badge text-bg-secondary">C#</span>
+                  <span class="badge text-bg-secondary">ASP.NET Core MVC</span>
+                  <span class="badge text-bg-secondary">MySQL</span>
+                  <span class="badge text-bg-secondary">Entity Framework</span>
+                  <span class="badge text-bg-secondary">BCrypt</span>
+                  <span class="badge text-bg-secondary">Bootstrap 5</span>
                 </div>
-                <div class="mt-auto d-flex gap-2">
-                  <a href="https://github.com/palmert974/Birdwatch-pro" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/palmert974/wos-recent-projects-2025" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
                     <i class="bi bi-github"></i> View Code
                   </a>
-                  <a href="https://birdwatch-pro.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
+                    <i class="bi bi-lock me-1"></i>Local / Demo on Request
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- iTunes ETL Pipeline — WOS Python + SQL -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
+              <div class="d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(20,40,20,0.9), rgba(14,17,19,0.95)); aspect-ratio: 16/9;">
+                <div class="text-center p-4">
+                  <i class="bi bi-database-fill-gear text-accent" style="font-size: 3.5rem;"></i>
+                  <div class="mt-2 fw-bold text-white fs-6">iTunes ETL Pipeline</div>
+                  <div class="small text-muted-2">Python &bull; pandas &bull; SQLite</div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
+                  <h3 class="h4 mb-0">iTunes ETL Pipeline</h3>
+                  <span class="badge" style="background: rgba(25,135,84,0.2); color: #20c997; border: 1px solid rgba(25,135,84,0.4);">Data Engineering</span>
+                </div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo &bull; Python &bull; WOS Data Track</div>
+                <p class="text-muted-2 mb-3">
+                  End-to-end ETL pipeline that extracts music metadata across 5 genres (Reggae, Hip-Hop, Dancehall, Afrobeats, Soca) from the iTunes Search API, transforms and normalizes the data with pandas, then loads it into a SQLite database for business intelligence queries.
+                </p>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
+                    <p class="small text-muted-2 mb-0">Raw iTunes API returns messy, nested JSON across multiple genres with no clean structure for analysis.</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
+                    <p class="small text-muted-2 mb-0">Automated pipeline normalizes camelCase fields, deduplicates records, and loads clean data into SQL for BI queries.</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge text-bg-secondary">Python</span>
+                  <span class="badge text-bg-secondary">pandas</span>
+                  <span class="badge text-bg-secondary">SQLite</span>
+                  <span class="badge text-bg-secondary">REST API</span>
+                  <span class="badge text-bg-secondary">ETL</span>
+                  <span class="badge text-bg-secondary">Data Engineering</span>
+                </div>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/palmert974/itunes-etl-pipeline" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-github"></i> View Code
                   </a>
+                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
+                    <i class="bi bi-terminal me-1"></i>CLI / Run Locally
+                  </span>
                 </div>
               </div>
             </div>
