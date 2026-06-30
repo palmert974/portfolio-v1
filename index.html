@@ -58,11 +58,19 @@
       </span>
     </div>
 
-    <!-- Hero — centered, clean -->
+    <!-- Hero — centered, with photo -->
     <header class="hero-animated" id="hero">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9 col-md-11 text-center animate-fade-in">
+
+            <!-- Headshot -->
+            <div class="mb-4 animate-fade-in">
+              <div style="position:relative;display:inline-block;">
+                <div style="position:absolute;inset:-6px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--gold));opacity:0.35;animation:float 4s ease-in-out infinite;"></div>
+                <img src="assets/Headshot.jpeg" alt="Tamara Palmer" class="hero-img" />
+              </div>
+            </div>
 
             <div class="d-flex flex-wrap justify-content-center gap-2 mb-3 animate-fade-in">
               <span style="font-size:0.7rem;background:rgba(124,58,237,0.15);color:var(--accent-3);border:1px solid rgba(124,58,237,0.3);padding:3px 10px;border-radius:20px;font-weight:600;letter-spacing:0.05em;">&#127774; React Miami Speaker</span>
@@ -158,6 +166,57 @@
           </div>
           <div class="col-auto">
             <a href="projects.html" class="btn btn-sm btn-outline-light">All Projects <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities & Speaking Carousel -->
+    <section class="py-5" id="highlights" style="background:var(--surface);border-bottom:1px solid var(--border);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <p class="text-center mb-2" style="font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent-3);font-weight:600;">Highlights</p>
+            <h2 class="display-6 fw-bold mb-2 text-center" style="font-family:'Space Grotesk',sans-serif;">Featured Work &amp; Speaking</h2>
+            <div class="section-divider"></div>
+            <div id="highlightsCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card border-0 mx-auto" style="max-width:640px;background:var(--surface-2);border:1px solid var(--border) !important;">
+                    <img src="assets/WOS.jpeg" class="card-img-top" alt="Enterprise Development at AAA Auto Club" style="height:380px;object-fit:cover;">
+                    <div class="card-body text-center p-4">
+                      <h5 class="fw-bold fs-5 mb-2">Enterprise Development</h5>
+                      <p class="text-muted-2 mb-0">Building full-stack features with C#/.NET and React at Fortune 500 companies.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card border-0 mx-auto" style="max-width:640px;background:var(--surface-2);border:1px solid var(--border) !important;">
+                    <img src="assets/AfroTech.jpeg" class="card-img-top" alt="Speaking at AfroTech" style="height:380px;object-fit:cover;">
+                    <div class="card-body text-center p-4">
+                      <h5 class="fw-bold fs-5 mb-2">Speaking &amp; Mentorship</h5>
+                      <p class="text-muted-2 mb-0">Sharing knowledge at React Miami, eMerge Americas, and AfroTech. Guiding the next generation of engineers.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card border-0 mx-auto" style="max-width:640px;background:var(--surface-2);border:1px solid var(--border) !important;">
+                    <img src="assets/Global.jpeg" class="card-img-top" alt="Global Impact" style="height:380px;object-fit:cover;">
+                    <div class="card-body text-center p-4">
+                      <h5 class="fw-bold fs-5 mb-2">Global Impact</h5>
+                      <p class="text-muted-2 mb-0">Leveraging global perspective and lived experience to build inclusive, scalable solutions.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev"><i class="bi bi-chevron-left fs-2"></i></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next"><i class="bi bi-chevron-right fs-2"></i></button>
+            </div>
           </div>
         </div>
       </div>
