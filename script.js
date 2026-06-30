@@ -32,17 +32,17 @@ if (typeof gsap !== 'undefined') {
   if (document.getElementById('hero-text')) {
 
     gsap.from('.hero-img', {
-      scale: 0.8, opacity: 0, duration: 1, ease: 'back.out(1.6)', delay: 0.15
+      scale: 0.85, opacity: 0, duration: 0.9, ease: 'back.out(1.4)'
     });
 
-    gsap.timeline({ delay: 0.5 })
-      .from('.hero-label',   { y: 16, opacity: 0, duration: 0.55, ease: 'power2.out' })
-      .from('.hero-headline',{ y: 34, opacity: 0, duration: 0.75, ease: 'power3.out' }, '-=0.2')
-      .from('.hero-tagline', { y: 24, opacity: 0, duration: 0.7,  ease: 'power2.out' }, '-=0.4')
-      .from('.metric-card',  { y: 28, opacity: 0, duration: 0.55, stagger: 0.1, ease: 'power3.out' }, '-=0.3')
-      .from('.brand-badge',  { scale: 0.78, opacity: 0, duration: 0.4, stagger: 0.07, ease: 'back.out(1.4)' }, '-=0.2')
-      .from('.hero-animated .btn',            { y: 18, opacity: 0, duration: 0.45, stagger: 0.12, ease: 'power2.out' }, '-=0.15')
-      .from('.hero-animated .d-flex.gap-4 a', { opacity: 0, duration: 0.4, stagger: 0.1, ease: 'power1.out' }, '-=0.1');
+    gsap.timeline()
+      .from('.hero-label',   { y: 12, opacity: 0, duration: 0.45, ease: 'power2.out' })
+      .from('.hero-headline',{ y: 28, opacity: 0, duration: 0.65, ease: 'power3.out' }, '-=0.2')
+      .from('.hero-tagline', { y: 18, opacity: 0, duration: 0.6,  ease: 'power2.out' }, '-=0.35')
+      .from('.metric-card',  { y: 22, opacity: 0, duration: 0.5,  stagger: 0.08, ease: 'power3.out' }, '-=0.3')
+      .from('.brand-badge',  { scale: 0.82, opacity: 0, duration: 0.35, stagger: 0.06, ease: 'back.out(1.4)' }, '-=0.2')
+      .from('.hero-animated .btn',            { y: 14, opacity: 0, duration: 0.4, stagger: 0.1, ease: 'power2.out' }, '-=0.1')
+      .from('.hero-animated .d-flex.gap-4 a', { opacity: 0, duration: 0.35, stagger: 0.08, ease: 'power1.out' }, '-=0.1');
 
     // Metric count-ups (fire after delay)
     document.querySelectorAll('.metric-number').forEach(el => {
