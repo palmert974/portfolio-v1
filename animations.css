@@ -1,0 +1,758 @@
+/**
+ * ANIMATION SYSTEM
+ * Production-ready animations (Kanye + Chris Brown aesthetic)
+ * GPU-accelerated, performance-optimized, accessibility-aware
+ */
+
+/* ============================================================================
+   1. SCROLL REVEAL ANIMATIONS
+   ============================================================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================================================
+   2. GLITCH & FLICKER EFFECTS (Kanye-inspired)
+   ============================================================================ */
+
+@keyframes glitchText {
+  0%, 100% {
+    text-shadow: 0 0 0 rgba(212, 31, 42, 0),
+                 -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+  14% {
+    text-shadow: 0 0 0 rgba(212, 31, 42, 0),
+                 -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+  15% {
+    text-shadow: -2px -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+  49% {
+    text-shadow: -2px -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+  50% {
+    text-shadow: 0 0 0 rgba(212, 31, 42, 0),
+                 -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+  100% {
+    text-shadow: 0 0 0 rgba(212, 31, 42, 0),
+                 -2px 0 #ff5555,
+                 2px 2px #d41f2a;
+  }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 10px rgba(212, 31, 42, 0.8);
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 5px rgba(212, 31, 42, 0.3);
+    opacity: 0.8;
+  }
+}
+
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 7px #d41f2a,
+                 0 0 10px rgba(212, 31, 42, 0.5),
+                 0 0 20px rgba(212, 31, 42, 0.3);
+    color: #ff5555;
+  }
+  50% {
+    text-shadow: 0 0 20px #d41f2a,
+                 0 0 30px rgba(212, 31, 42, 0.8),
+                 0 0 40px rgba(212, 31, 42, 0.5);
+    color: #ffffff;
+  }
+}
+
+/* ============================================================================
+   3. PARALLAX & DEPTH EFFECTS
+   ============================================================================ */
+
+@keyframes parallaxSlow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+@keyframes parallaxMedium {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100px); }
+}
+
+@keyframes parallaxFast {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-150px); }
+}
+
+/* ============================================================================
+   4. FLOATING & HOVERING EFFECTS
+   ============================================================================ */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotateZ(-0.5deg);
+  }
+  75% {
+    transform: translateY(-5px) rotateZ(0.5deg);
+  }
+}
+
+/* ============================================================================
+   5. PULSE & BREATHING EFFECTS
+   ============================================================================ */
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes breathing {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 31, 42, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(212, 31, 42, 0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(212, 31, 42, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(212, 31, 42, 0.6);
+  }
+}
+
+/* ============================================================================
+   6. GRADIENT & COLOR SHIFT EFFECTS
+   ============================================================================ */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes colorShift {
+  0%, 100% {
+    color: var(--color-accent-500);
+  }
+  50% {
+    color: var(--color-accent-300);
+  }
+}
+
+/* ============================================================================
+   7. TYPEWRITER & TEXT EFFECTS
+   ============================================================================ */
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 49%, 100% {
+    opacity: 1;
+  }
+  50%, 99% {
+    opacity: 0;
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ============================================================================
+   8. SCALE & ZOOM EFFECTS
+   ============================================================================ */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ============================================================================
+   9. ROTATION & SPIN EFFECTS
+   ============================================================================ */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBounce {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+/* ============================================================================
+   10. STAGGER & SEQUENCE EFFECTS
+   ============================================================================ */
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* ============================================================================
+   11. ANIMATION CLASSES (Ready to use)
+   ============================================================================ */
+
+/* FADE ANIMATIONS */
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 0.8s cubic-bezier(0.22, 0.61, 0.18, 1) 0.3s forwards;
+}
+
+.animate-fade-up {
+  animation: fadeInUp 1s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.animate-fade-down {
+  animation: fadeInDown 1s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+/* SLIDE ANIMATIONS */
+.animate-slide-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+/* SCALE ANIMATIONS */
+.animate-scale-in {
+  animation: scaleIn 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+/* GLITCH ANIMATIONS */
+.animate-glitch {
+  animation: glitchText 0.3s ease-in-out;
+}
+
+.animate-glitch:hover {
+  animation: glitchText 0.3s ease-in-out infinite;
+}
+
+.animate-flicker {
+  animation: flicker 1.5s ease-in-out infinite;
+}
+
+.animate-neon {
+  animation: neon 2s ease-in-out infinite;
+}
+
+/* FLOATING ANIMATIONS */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: floatFast 2s ease-in-out infinite;
+}
+
+.animate-bobbing {
+  animation: bobbing 3s ease-in-out infinite;
+}
+
+/* PULSE ANIMATIONS */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-breathing {
+  animation: breathing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* GRADIENT ANIMATIONS */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent-500), #ff6b6b, var(--color-accent-500));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* TYPEWRITER EFFECT */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid var(--color-accent-500);
+  white-space: nowrap;
+  animation: typewriter 2s steps(40) 0.5s forwards,
+             blink 0.75s step-end infinite;
+}
+
+/* BOUNCE EFFECT */
+.animate-bounce {
+  animation: bounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+/* SPIN EFFECT */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spinReverse 1s linear infinite;
+}
+
+/* ============================================================================
+   12. SCROLL REVEAL WITH INTERSECTION OBSERVER
+   ============================================================================ */
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.18, 1),
+              transform 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+[data-scroll].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for children */
+[data-scroll] > [data-scroll-item] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.18, 1),
+              transform 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+[data-scroll].visible > [data-scroll-item]:nth-child(1) { transition-delay: 0.1s; }
+[data-scroll].visible > [data-scroll-item]:nth-child(2) { transition-delay: 0.2s; }
+[data-scroll].visible > [data-scroll-item]:nth-child(3) { transition-delay: 0.3s; }
+[data-scroll].visible > [data-scroll-item]:nth-child(4) { transition-delay: 0.4s; }
+[data-scroll].visible > [data-scroll-item]:nth-child(5) { transition-delay: 0.5s; }
+
+[data-scroll].visible > [data-scroll-item] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================================
+   13. HOVER & INTERACTION EFFECTS
+   ============================================================================ */
+
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-glow {
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.hover-glow:hover {
+  box-shadow: var(--glow-accent-strong);
+}
+
+.hover-scale {
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-accent {
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.hover-accent:hover {
+  color: var(--color-accent-300);
+}
+
+/* ============================================================================
+   14. BUTTON ANIMATIONS
+   ============================================================================ */
+
+.btn {
+  position: relative;
+  transition: all var(--duration-normal) var(--ease-in-out);
+  will-change: transform, box-shadow;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Underline effect */
+.btn-underline {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent-500);
+  transition: width var(--duration-normal) var(--ease-in-out);
+}
+
+.btn-underline:hover::after {
+  width: 100%;
+}
+
+/* ============================================================================
+   15. CARD & ELEMENT ANIMATIONS
+   ============================================================================ */
+
+.card {
+  transition: all var(--duration-normal) var(--ease-in-out);
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.card-image {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.card-image img {
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.08);
+}
+
+/* ============================================================================
+   16. CURSOR EFFECTS (Desktop only)
+   ============================================================================ */
+
+.cursor-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(212, 31, 42, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-out;
+  will-change: left, top;
+}
+
+@media (hover: hover) {
+  .cursor-glow {
+    opacity: 1 !important;
+  }
+}
+
+.magnetic {
+  position: relative;
+  transition: transform var(--duration-normal) var(--ease-in-out);
+}
+
+/* ============================================================================
+   17. PARALLAX SCROLL EFFECT
+   ============================================================================ */
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* ============================================================================
+   18. SECTION TRANSITIONS
+   ============================================================================ */
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-enter {
+  animation: sectionFadeIn 0.8s cubic-bezier(0.22, 0.61, 0.18, 1);
+}
+
+/* ============================================================================
+   19. LOADER & PROGRESS ANIMATIONS
+   ============================================================================ */
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-bar {
+  height: 3px;
+  background: var(--color-accent-500);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  animation: progressFill 0.8s ease-out forwards;
+}
+
+/* ============================================================================
+   20. ACCESSIBILITY: RESPECT PREFERS-REDUCED-MOTION
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   21. PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* GPU acceleration for smooth animations */
+[data-scroll],
+.animate-float,
+.animate-fade-in,
+.card,
+.btn,
+.magnetic {
+  will-change: transform, opacity;
+}
+
+/* Optimize for mobile */
+@media (max-width: 768px) {
+  /* Disable some animations on touch devices */
+  .cursor-glow {
+    display: none;
+  }
+
+  /* Reduce parallax intensity */
+  .parallax-slow {
+    animation: parallaxSlow 0.5s ease-out;
+  }
+
+  /* Simplify hover effects to focus states */
+  .hover-lift:active {
+    transform: translateY(-2px);
+  }
+}
