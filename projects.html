@@ -83,32 +83,51 @@
               <!-- Top accent line -->
               <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),#c44dff,var(--accent));background-size:200% 100%;animation:gradientShift 4s ease infinite;z-index:1;"></div>
               <div class="row g-0">
-                <!-- Visual — Cinematic Artist Platform Art -->
+                <!-- Visual — DiscoverUs App UI Mockup -->
                 <div class="col-md-5">
-                  <div class="position-relative d-flex align-items-center justify-content-center"
-                       style="background:linear-gradient(160deg,#08020f 0%,#1a0520 35%,#0d0028 70%,#020008 100%);min-height:300px;overflow:hidden;">
-                    <!-- Blobs -->
-                    <div style="position:absolute;width:380px;height:380px;background:radial-gradient(circle,rgba(212,31,42,0.22) 0%,transparent 70%);top:-100px;left:-100px;pointer-events:none;"></div>
-                    <div style="position:absolute;width:260px;height:260px;background:radial-gradient(circle,rgba(150,0,255,0.12) 0%,transparent 70%);bottom:-60px;right:-20px;pointer-events:none;"></div>
-                    <div style="position:absolute;width:180px;height:180px;background:radial-gradient(circle,rgba(212,31,42,0.08) 0%,transparent 70%);top:20px;right:20px;pointer-events:none;"></div>
-                    <!-- Waveform bars -->
-                    <div class="project-wave-bars" style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);opacity:0.65;">
-                      <span></span><span></span><span></span><span></span><span></span>
-                      <span></span><span></span><span></span><span></span><span></span>
-                      <span></span><span></span>
+                  <div class="position-relative" style="background:#121212;min-height:300px;overflow:hidden;display:flex;flex-direction:column;">
+                    <!-- Navbar -->
+                    <div style="background:#1a1a2e;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;">
+                      <span style="color:var(--accent);font-weight:800;font-size:0.85rem;letter-spacing:1px;">DiscoverUs</span>
+                      <div style="display:flex;gap:10px;">
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);">Browse</span>
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);">Submit</span>
+                        <span style="font-size:0.65rem;color:var(--accent);">Login</span>
+                      </div>
                     </div>
-                    <!-- Album-style typography -->
-                    <div class="text-center" style="z-index:1;padding:2rem;">
-                      <div style="font-size:0.58rem;letter-spacing:8px;color:rgba(212,31,42,0.8);text-transform:uppercase;margin-bottom:14px;font-weight:700;">Artist Discovery Platform</div>
-                      <div style="font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;letter-spacing:-2px;line-height:0.9;text-transform:uppercase;">
-                        <span style="color:#fff;">DISCOVER</span><br>
-                        <span style="-webkit-text-stroke:2px var(--accent);-webkit-text-fill-color:transparent;color:var(--accent);">US</span>
+                    <!-- Hero text -->
+                    <div style="padding:12px 16px 8px;border-bottom:1px solid rgba(255,255,255,0.06);">
+                      <div style="font-size:0.7rem;font-weight:700;color:#fff;margin-bottom:2px;">Unleash Music's Hidden Gems</div>
+                      <div style="font-size:0.6rem;color:rgba(255,255,255,0.4);">Discover unsigned artists across every genre</div>
+                    </div>
+                    <!-- Music card grid -->
+                    <div style="padding:12px 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;flex:1;">
+                      <div style="display:flex;flex-direction:column;gap:4px;">
+                        <div style="background:linear-gradient(135deg,#2d1b4e,#1a0f2e);border-radius:6px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">🎵</div>
+                        <div style="font-size:0.52rem;color:rgba(255,255,255,0.7);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">J. Cole</div>
+                        <div style="font-size:0.48rem;color:rgba(255,255,255,0.35);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">No Role Modelz</div>
                       </div>
-                      <div style="margin-top:18px;display:flex;gap:7px;justify-content:center;flex-wrap:wrap;">
-                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">React</span>
-                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">Node.js</span>
-                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">Spotify</span>
+                      <div style="display:flex;flex-direction:column;gap:4px;">
+                        <div style="background:linear-gradient(135deg,#1a2e1a,#0d1f0d);border-radius:6px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">🎶</div>
+                        <div style="font-size:0.52rem;color:rgba(255,255,255,0.7);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">SZA</div>
+                        <div style="font-size:0.48rem;color:rgba(255,255,255,0.35);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">Kill Bill</div>
                       </div>
+                      <div style="display:flex;flex-direction:column;gap:4px;">
+                        <div style="background:linear-gradient(135deg,#2e1a1a,#1f0d0d);border-radius:6px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">🎤</div>
+                        <div style="font-size:0.52rem;color:rgba(255,255,255,0.7);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">WizKid</div>
+                        <div style="font-size:0.48rem;color:rgba(255,255,255,0.35);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">Essence</div>
+                      </div>
+                      <div style="display:flex;flex-direction:column;gap:4px;">
+                        <div style="background:linear-gradient(135deg,#1a1a2e,#0d0d1f);border-radius:6px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">🎸</div>
+                        <div style="font-size:0.52rem;color:rgba(255,255,255,0.7);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">Burna Boy</div>
+                        <div style="font-size:0.48rem;color:rgba(255,255,255,0.35);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">Last Last</div>
+                      </div>
+                    </div>
+                    <!-- CTA row -->
+                    <div style="padding:10px 16px;display:flex;gap:8px;border-top:1px solid rgba(255,255,255,0.06);">
+                      <span style="background:var(--accent);color:#fff;font-size:0.6rem;padding:4px 10px;border-radius:4px;font-weight:600;">Sign Up Today</span>
+                      <span style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);font-size:0.6rem;padding:4px 10px;border-radius:4px;">Listen</span>
+                      <span style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);font-size:0.6rem;padding:4px 10px;border-radius:4px;">Scout</span>
                     </div>
                   </div>
                 </div>
@@ -329,24 +348,61 @@
                ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <!-- Film noir visual placeholder -->
-              <div class="scanlines position-relative d-flex align-items-center justify-content-center"
-                   style="background:linear-gradient(170deg,#020208 0%,#07071a 40%,#030310 80%,#010106 100%);aspect-ratio:16/9;overflow:hidden;">
-                <!-- Film color strip at top -->
-                <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),#ff6b35,#f5c518,#20c997,var(--accent));background-size:200% 100%;animation:gradientShift 5s ease infinite;z-index:3;"></div>
-                <!-- Subtle vignette -->
-                <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,0.6) 100%);pointer-events:none;z-index:1;"></div>
-                <!-- Film frame corner brackets -->
-                <div style="position:absolute;top:14px;left:14px;width:22px;height:22px;border-top:2px solid rgba(255,255,255,0.18);border-left:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
-                <div style="position:absolute;top:14px;right:14px;width:22px;height:22px;border-top:2px solid rgba(255,255,255,0.18);border-right:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
-                <div style="position:absolute;bottom:14px;left:14px;width:22px;height:22px;border-bottom:2px solid rgba(255,255,255,0.18);border-left:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
-                <div style="position:absolute;bottom:14px;right:14px;width:22px;height:22px;border-bottom:2px solid rgba(255,255,255,0.18);border-right:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
-                <!-- Content -->
-                <div class="text-center" style="z-index:2;padding:1.5rem;">
-                  <div style="font-size:0.52rem;letter-spacing:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;margin-bottom:13px;">— Film Review Platform —</div>
-                  <div style="font-size:clamp(1.8rem,4vw,2.9rem);font-weight:900;color:#fff;letter-spacing:3px;text-transform:uppercase;line-height:0.95;font-style:italic;">THE<br>REWIND</div>
-                  <div style="margin-top:14px;color:var(--accent);font-size:1rem;letter-spacing:5px;">★ ★ ★ ★ ★</div>
-                  <div style="margin-top:10px;font-size:0.58rem;color:rgba(255,255,255,0.22);letter-spacing:3px;text-transform:uppercase;">C# .NET MVC · MySQL · BCrypt Auth</div>
+              <!-- TheRewind App UI Mockup — Bootstrap Dark table layout -->
+              <div style="background:#212529;aspect-ratio:16/9;overflow:hidden;display:flex;flex-direction:column;font-family:system-ui,sans-serif;">
+                <!-- Navbar -->
+                <div style="background:#1a1d20;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.1);">
+                  <span style="font-weight:700;font-size:0.8rem;color:#fff;">🎬 The Rewind</span>
+                  <div style="display:flex;gap:10px;align-items:center;">
+                    <span style="font-size:0.6rem;color:rgba(255,255,255,0.6);">All Movies</span>
+                    <span style="font-size:0.6rem;color:rgba(255,255,255,0.6);">Add Movie</span>
+                    <span style="font-size:0.6rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;">Login</span>
+                  </div>
+                </div>
+                <!-- Page header -->
+                <div style="padding:8px 14px 4px;border-bottom:1px solid rgba(255,255,255,0.07);">
+                  <span style="font-size:0.75rem;font-weight:600;color:#fff;">All Movies</span>
+                </div>
+                <!-- Bootstrap-style table -->
+                <div style="padding:0 14px;flex:1;overflow:hidden;">
+                  <table style="width:100%;border-collapse:collapse;font-size:0.58rem;">
+                    <thead>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,0.12);">
+                        <th style="padding:6px 4px;color:rgba(255,255,255,0.55);font-weight:600;text-align:left;">Title</th>
+                        <th style="padding:6px 4px;color:rgba(255,255,255,0.55);font-weight:600;text-align:left;">Genre</th>
+                        <th style="padding:6px 4px;color:rgba(255,255,255,0.55);font-weight:600;text-align:left;">Rating</th>
+                        <th style="padding:6px 4px;color:rgba(255,255,255,0.55);font-weight:600;text-align:left;">Added By</th>
+                        <th style="padding:6px 4px;color:rgba(255,255,255,0.55);font-weight:600;text-align:left;">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                        <td style="padding:5px 4px;color:#fff;font-weight:600;">Interstellar</td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.65);">Sci-Fi</td>
+                        <td style="padding:5px 4px;"><span style="background:#ffc107;color:#000;padding:1px 6px;border-radius:3px;font-weight:700;">4.8 ⭐</span></td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.5);">@tamara</td>
+                        <td style="padding:5px 4px;"><span style="color:#0dcaf0;font-size:0.52rem;">View</span></td>
+                      </tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                        <td style="padding:5px 4px;color:#fff;font-weight:600;">Get Out</td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.65);">Horror</td>
+                        <td style="padding:5px 4px;"><span style="background:#ffc107;color:#000;padding:1px 6px;border-radius:3px;font-weight:700;">4.9 ⭐</span></td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.5);">@jordan</td>
+                        <td style="padding:5px 4px;"><span style="color:#0dcaf0;font-size:0.52rem;">View</span></td>
+                      </tr>
+                      <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                        <td style="padding:5px 4px;color:#fff;font-weight:600;">The Notebook</td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.65);">Romance</td>
+                        <td style="padding:5px 4px;"><span style="background:#ffc107;color:#000;padding:1px 6px;border-radius:3px;font-weight:700;">4.2 ⭐</span></td>
+                        <td style="padding:5px 4px;color:rgba(255,255,255,0.5);">@alex</td>
+                        <td style="padding:5px 4px;"><span style="color:#0dcaf0;font-size:0.52rem;">View</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Footer -->
+                <div style="padding:6px 14px;background:#1a1d20;border-top:1px solid rgba(255,255,255,0.07);">
+                  <span style="font-size:0.52rem;color:rgba(255,255,255,0.3);">© 2025 — The Rewind</span>
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
@@ -392,23 +448,26 @@
                ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <!-- Terminal / data pipeline visual -->
-              <div class="data-grid position-relative d-flex align-items-center justify-content-center"
-                   style="background:linear-gradient(160deg,#020a04 0%,#05140a 45%,#030c05 100%);aspect-ratio:16/9;overflow:hidden;font-family:monospace;">
-                <!-- Glow center -->
-                <div style="position:absolute;width:320px;height:320px;background:radial-gradient(circle,rgba(32,201,151,0.1) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;"></div>
-                <!-- Content -->
-                <div class="text-center" style="z-index:1;padding:1.5rem;">
-                  <div style="display:inline-block;background:rgba(32,201,151,0.07);border:1px solid rgba(32,201,151,0.22);border-radius:4px;padding:3px 13px;font-size:0.58rem;color:#20c997;letter-spacing:2px;margin-bottom:14px;text-transform:uppercase;">▶ Pipeline Active</div>
-                  <div style="font-size:clamp(1.6rem,4vw,2.6rem);font-weight:900;line-height:1;text-shadow:0 0 24px rgba(32,201,151,0.35);">
-                    <span style="color:#20c997;">iTunes</span><br>
-                    <span style="color:#fff;">ETL</span>
-                  </div>
-                  <div style="margin-top:14px;font-size:0.58rem;color:rgba(32,201,151,0.5);line-height:2.2;">
-                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Extract: iTunes API · 5 genres</div>
-                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Transform: pandas · dedupe · normalize</div>
-                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Load: SQLite · BI queries ready</div>
-                  </div>
+              <!-- iTunes ETL — Actual terminal output mockup -->
+              <div style="background:#0d1117;aspect-ratio:16/9;overflow:hidden;display:flex;flex-direction:column;font-family:'Courier New',monospace;">
+                <!-- Terminal title bar -->
+                <div style="background:#1c1c1e;padding:7px 12px;display:flex;align-items:center;gap:7px;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;">
+                  <span style="width:9px;height:9px;border-radius:50%;background:#ff5f57;display:inline-block;"></span>
+                  <span style="width:9px;height:9px;border-radius:50%;background:#febc2e;display:inline-block;"></span>
+                  <span style="width:9px;height:9px;border-radius:50%;background:#28c840;display:inline-block;"></span>
+                  <span style="font-size:0.6rem;color:rgba(255,255,255,0.4);margin-left:8px;">itunes_pipeline.py</span>
+                </div>
+                <!-- Terminal output -->
+                <div style="padding:10px 14px;flex:1;overflow:hidden;line-height:1.7;">
+                  <div style="font-size:0.58rem;color:#20c997;">$ python itunes_pipeline.py</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.6);">[EXTRACT] Fetching genre: <span style="color:#20c997;">reggae</span> → 15 tracks</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.6);">[EXTRACT] Fetching genre: <span style="color:#20c997;">hip-hop</span> → 15 tracks</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.6);">[EXTRACT] Fetching genre: <span style="color:#20c997;">dancehall</span> → 15 tracks</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.6);">[EXTRACT] Fetching genre: <span style="color:#20c997;">afrobeats</span> → 15 tracks</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.6);">[EXTRACT] Fetching genre: <span style="color:#20c997;">soca</span> → 15 tracks</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.4);">[TRANSFORM] Deduplicated: 75 → 72 rows · Renamed camelCase cols</div>
+                  <div style="font-size:0.58rem;color:rgba(255,255,255,0.4);">[LOAD] Writing to <span style="color:#58a6ff;">itunes_music.db</span> table: music_tracks</div>
+                  <div style="font-size:0.58rem;color:#28c840;font-weight:700;">✓ Pipeline complete — 72 tracks loaded</div>
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
