@@ -4,24 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects | Tamara Palmer — DevOps Engineer & Full-Stack Developer</title>
-    <meta name="description" content="Portfolio projects by Tamara Palmer — Full-stack apps including a hackathon-winning music game, DiscoverUs artist platform (React/Node/Spotify), TuneTracker CRUD app, BandSite with MySQL REST API, and Birdwatch React app. Live demos available." />
-    <meta name="keywords" content="Tamara Palmer projects, full-stack developer portfolio, React projects, Node.js, MySQL, Spotify API, hackathon, BrainStation, portfolio" />
+    <meta name="description" content="Portfolio projects by Tamara Palmer — Full-stack apps including a hackathon-winning music game, DiscoverUs artist platform (React/Node/Spotify), TuneTracker CRUD app, BandSite with MySQL REST API, TheRewind movie review platform, and an iTunes ETL pipeline. Live demos available." />
+    <meta name="keywords" content="Tamara Palmer projects, full-stack developer portfolio, React projects, Node.js, MySQL, Spotify API, C# .NET, Python ETL, hackathon, BrainStation, portfolio" />
     <meta name="author" content="Tamara Palmer" />
     <link rel="canonical" href="https://portfolio-v1-blond-rho.vercel.app/projects.html" />
-
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://portfolio-v1-blond-rho.vercel.app/projects.html" />
     <meta property="og:title" content="Projects | Tamara Palmer — Full-Stack Developer" />
-    <meta property="og:description" content="Hackathon-winning music game, DiscoverUs artist platform, TuneTracker, BandSite, and more. React, Node.js, MySQL, Python, C#." />
+    <meta property="og:description" content="Hackathon-winning music game, DiscoverUs artist platform, TuneTracker, BandSite, TheRewind, iTunes ETL. React, Node.js, C#/.NET, Python." />
     <meta property="og:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/sonicwave-card.png" />
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Projects | Tamara Palmer — Full-Stack Developer" />
-    <meta name="twitter:description" content="Full-stack projects: hackathon-winning music game, artist discovery platform, React apps, Node.js/MySQL. Live demos available." />
+    <meta name="twitter:description" content="Full-stack projects: hackathon winner, artist discovery platform, movie reviews, ETL pipeline. Live demos available." />
     <meta name="twitter:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/sonicwave-card.png" />
-
     <meta name="theme-color" content="#d41f2a" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -29,6 +24,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-base text-light">
+    <div class="cursor-glow"></div>
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent sticky-top" aria-label="Primary">
       <div class="container">
         <a class="navbar-brand fw-semibold" href="index.html">Tamara Palmer</a>
@@ -45,12 +41,14 @@
         </div>
       </div>
     </nav>
-    
+
     <!-- Projects Hero -->
     <section class="py-5 bg-base" style="background: radial-gradient(1200px 300px at 50% -10%, rgba(212,31,42,0.07), transparent) !important;">
       <div class="container">
         <div class="text-center">
+          <p class="text-accent fw-semibold small text-uppercase mb-3" style="letter-spacing:3px;">Portfolio</p>
           <h1 class="display-4 fw-bold mb-3 animate-fade-in">My Projects</h1>
+          <div class="section-divider"></div>
           <p class="lead text-muted-2 mb-4 animate-fade-in-delay">
             Full-stack applications built with React, Node.js, C#/.NET, Python, and SQL. From hackathon wins to production platforms.
           </p>
@@ -75,26 +73,53 @@
       <div class="container">
         <div class="row g-4">
 
-          <!-- DiscoverUs — Capstone Project (FEATURED) -->
+          <!-- ═══════════════════════════════════════
+               DISCOVORUS — Capstone (FEATURED)
+               Artist Discovery Platform
+               ═══════════════════════════════════════ -->
           <div class="col-12">
-            <div class="card bg-elevated border-0 shadow-sm project-card hover-lift" style="border: 1px solid rgba(212,31,42,0.25) !important;">
+            <div class="card bg-elevated border-0 shadow project-card hover-lift"
+                 style="border: 1px solid rgba(212,31,42,0.3) !important; position: relative; overflow: hidden;">
+              <!-- Top accent line -->
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),#c44dff,var(--accent));background-size:200% 100%;animation:gradientShift 4s ease infinite;z-index:1;"></div>
               <div class="row g-0">
+                <!-- Visual — Cinematic Artist Platform Art -->
                 <div class="col-md-5">
-                  <div class="d-flex align-items-center justify-content-center h-100 p-4" style="background: linear-gradient(135deg, rgba(212,31,42,0.12), rgba(14,17,19,0.8)); min-height: 280px;">
-                    <div class="text-center">
-                      <i class="bi bi-music-note-beamed text-accent" style="font-size: 4rem;"></i>
-                      <div class="mt-3 fw-bold text-white fs-5">DiscoverUs</div>
-                      <div class="small text-muted-2">Independent Artist Platform</div>
+                  <div class="position-relative d-flex align-items-center justify-content-center"
+                       style="background:linear-gradient(160deg,#08020f 0%,#1a0520 35%,#0d0028 70%,#020008 100%);min-height:300px;overflow:hidden;">
+                    <!-- Blobs -->
+                    <div style="position:absolute;width:380px;height:380px;background:radial-gradient(circle,rgba(212,31,42,0.22) 0%,transparent 70%);top:-100px;left:-100px;pointer-events:none;"></div>
+                    <div style="position:absolute;width:260px;height:260px;background:radial-gradient(circle,rgba(150,0,255,0.12) 0%,transparent 70%);bottom:-60px;right:-20px;pointer-events:none;"></div>
+                    <div style="position:absolute;width:180px;height:180px;background:radial-gradient(circle,rgba(212,31,42,0.08) 0%,transparent 70%);top:20px;right:20px;pointer-events:none;"></div>
+                    <!-- Waveform bars -->
+                    <div class="project-wave-bars" style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);opacity:0.65;">
+                      <span></span><span></span><span></span><span></span><span></span>
+                      <span></span><span></span><span></span><span></span><span></span>
+                      <span></span><span></span>
+                    </div>
+                    <!-- Album-style typography -->
+                    <div class="text-center" style="z-index:1;padding:2rem;">
+                      <div style="font-size:0.58rem;letter-spacing:8px;color:rgba(212,31,42,0.8);text-transform:uppercase;margin-bottom:14px;font-weight:700;">Artist Discovery Platform</div>
+                      <div style="font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;letter-spacing:-2px;line-height:0.9;text-transform:uppercase;">
+                        <span style="color:#fff;">DISCOVER</span><br>
+                        <span style="-webkit-text-stroke:2px var(--accent);-webkit-text-fill-color:transparent;color:var(--accent);">US</span>
+                      </div>
+                      <div style="margin-top:18px;display:flex;gap:7px;justify-content:center;flex-wrap:wrap;">
+                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">React</span>
+                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">Node.js</span>
+                        <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:3px 10px;border-radius:999px;font-size:0.65rem;color:rgba(255,255,255,0.45);">Spotify</span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- Content -->
                 <div class="col-md-7">
                   <div class="card-body d-flex flex-column h-100 p-4">
                     <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-2">
                       <h3 class="h4 mb-0">DiscoverUs — Artist Discovery Platform</h3>
                       <div class="d-flex gap-2 flex-wrap">
                         <span class="badge bg-accent">Capstone Project</span>
-                        <span class="badge" style="background: rgba(255,193,7,0.2); color: #ffc107;">In Progress</span>
+                        <span class="badge" style="background:rgba(25,135,84,0.15);color:#20c997;border:1px solid rgba(25,135,84,0.35);">Completed</span>
                       </div>
                     </div>
                     <div class="small text-muted-2 mb-2"><i class="bi bi-people me-1"></i>Solo • Full-Stack • React + Node.js + Spotify API</div>
@@ -112,7 +137,7 @@
                           <li>Artist scouting &amp; curated playlists</li>
                           <li>Music submission system + admin dashboard</li>
                           <li>Browse, Login, SignUp, Artist Profile pages</li>
-                          <li>Redux state management</li>
+                          <li>Redux state management across all routes</li>
                         </ul>
                       </div>
                     </div>
@@ -125,13 +150,11 @@
                       <span class="badge text-bg-secondary">Material UI</span>
                       <span class="badge text-bg-secondary">SASS</span>
                     </div>
-                    <div class="mt-auto d-flex gap-2 flex-wrap">
+                    <div class="mt-auto d-flex gap-2 flex-wrap align-items-center">
                       <a href="https://github.com/palmert974/CapstoneProject" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
-                        <i class="bi bi-github"></i> View Code
+                        <i class="bi bi-github me-1"></i>View Code
                       </a>
-                      <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
-                        <i class="bi bi-clock me-1"></i>Live Demo — Coming Soon
-                      </span>
+                      <span class="small text-muted-2" style="font-size:0.72rem;"><i class="bi bi-info-circle me-1"></i>Demo requires Spotify OAuth credentials</span>
                     </div>
                   </div>
                 </div>
@@ -139,10 +162,21 @@
             </div>
           </div>
 
-          <!-- SonicWave -->
+          <!-- ═══════════════════════════════════════
+               SONICWAVE — Hackathon Winner
+               ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/sonicwave-card.png" alt="SonicWave music game screenshot" style="object-fit:cover; aspect-ratio: 16/9;">
+              <div class="project-img-wrap">
+                <img class="card-img-top project-img" src="assets/sonicwave-card.png"
+                     alt="SonicWave music guessing game" style="object-fit:cover;aspect-ratio:16/9;">
+                <div class="project-overlay">
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/palmert974/SonicWave" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-github me-1"></i>Code</a>
+                    <a href="https://sonicwave-delta.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-play-circle me-1"></i>Demo</a>
+                  </div>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">Sonic Wave</h3>
@@ -173,18 +207,30 @@
                   <a href="https://github.com/palmert974/SonicWave" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
                     <i class="bi bi-github"></i> View Code
                   </a>
-                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
-                    <i class="bi bi-clock me-1"></i>Demo — Being Updated
-                  </span>
+                  <a href="https://sonicwave-delta.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- TuneTracker -->
+          <!-- ═══════════════════════════════════════
+               TUNETRACKER — Full-Stack CRUD
+               ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/tunetracker-card.png" alt="TuneTracker screenshot" style="object-fit:cover; object-position: top; aspect-ratio: 16/9;" onerror="this.src='assets/tunetracker-card.svg'">
+              <div class="project-img-wrap">
+                <img class="card-img-top project-img" src="assets/tunetracker-card.png"
+                     alt="TuneTracker music library app" style="object-fit:cover;object-position:top;aspect-ratio:16/9;"
+                     onerror="this.src='assets/tunetracker-card.svg'">
+                <div class="project-overlay">
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/palmert974/TuneTracker" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-github me-1"></i>Code</a>
+                    <a href="https://tunetracker-one.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-play-circle me-1"></i>Demo</a>
+                  </div>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">TuneTracker</h3>
@@ -216,17 +262,29 @@
                     <i class="bi bi-github"></i> View Code
                   </a>
                   <a href="https://tunetracker-one.vercel.app" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- BandSite -->
+          <!-- ═══════════════════════════════════════
+               BANDSITE — Multi-Page MySQL Platform
+               ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <img class="card-img-top project-img" src="assets/bandsite-card.png" alt="BandSite screenshot" style="object-fit:cover; aspect-ratio: 16/9;" onerror="this.src='assets/bandsite-card.svg'">
+              <div class="project-img-wrap">
+                <img class="card-img-top project-img" src="assets/bandsite-card.png"
+                     alt="BandSite music platform" style="object-fit:cover;aspect-ratio:16/9;"
+                     onerror="this.src='assets/bandsite-card.svg'">
+                <div class="project-overlay">
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/palmert974/bandsite" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-github me-1"></i>Code</a>
+                    <a href="https://bandsite-black.vercel.app/index-bootstrap.html" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer"><i class="bi bi-play-circle me-1"></i>Demo</a>
+                  </div>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">BandSite</h3>
@@ -258,40 +316,56 @@
                     <i class="bi bi-github"></i> View Code
                   </a>
                   <a href="https://bandsite-black.vercel.app/index-bootstrap.html" class="btn btn-accent btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- TheRewind — WOS Assessment Project -->
+          <!-- ═══════════════════════════════════════
+               THE REWIND — WOS Exemplary Assessment
+               C# .NET MVC / MySQL / Auth
+               ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <div class="d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(30,30,50,0.9), rgba(14,17,19,0.95)); aspect-ratio: 16/9;">
-                <div class="text-center p-4">
-                  <i class="bi bi-film text-accent" style="font-size: 3.5rem;"></i>
-                  <div class="mt-2 fw-bold text-white fs-6">TheRewind</div>
-                  <div class="small text-muted-2">Movie Review Platform</div>
+              <!-- Film noir visual placeholder -->
+              <div class="scanlines position-relative d-flex align-items-center justify-content-center"
+                   style="background:linear-gradient(170deg,#020208 0%,#07071a 40%,#030310 80%,#010106 100%);aspect-ratio:16/9;overflow:hidden;">
+                <!-- Film color strip at top -->
+                <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),#ff6b35,#f5c518,#20c997,var(--accent));background-size:200% 100%;animation:gradientShift 5s ease infinite;z-index:3;"></div>
+                <!-- Subtle vignette -->
+                <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,0.6) 100%);pointer-events:none;z-index:1;"></div>
+                <!-- Film frame corner brackets -->
+                <div style="position:absolute;top:14px;left:14px;width:22px;height:22px;border-top:2px solid rgba(255,255,255,0.18);border-left:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
+                <div style="position:absolute;top:14px;right:14px;width:22px;height:22px;border-top:2px solid rgba(255,255,255,0.18);border-right:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
+                <div style="position:absolute;bottom:14px;left:14px;width:22px;height:22px;border-bottom:2px solid rgba(255,255,255,0.18);border-left:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
+                <div style="position:absolute;bottom:14px;right:14px;width:22px;height:22px;border-bottom:2px solid rgba(255,255,255,0.18);border-right:2px solid rgba(255,255,255,0.18);z-index:3;"></div>
+                <!-- Content -->
+                <div class="text-center" style="z-index:2;padding:1.5rem;">
+                  <div style="font-size:0.52rem;letter-spacing:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;margin-bottom:13px;">— Film Review Platform —</div>
+                  <div style="font-size:clamp(1.8rem,4vw,2.9rem);font-weight:900;color:#fff;letter-spacing:3px;text-transform:uppercase;line-height:0.95;font-style:italic;">THE<br>REWIND</div>
+                  <div style="margin-top:14px;color:var(--accent);font-size:1rem;letter-spacing:5px;">★ ★ ★ ★ ★</div>
+                  <div style="margin-top:10px;font-size:0.58rem;color:rgba(255,255,255,0.22);letter-spacing:3px;text-transform:uppercase;">C# .NET MVC · MySQL · BCrypt Auth</div>
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">TheRewind</h3>
-                  <span class="badge bg-accent">WOS Assessment</span>
+                  <span class="badge badge-exemplary">WOS Exemplary</span>
                 </div>
-                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo &bull; C# / .NET MVC &bull; MySQL</div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo · C# / .NET MVC · MySQL</div>
                 <p class="text-muted-2 mb-3">
-                  Full-stack movie review platform built as a WOS assessment project. Users register, log in securely, submit movie reviews with star ratings, and manage their own entries — all protected by session-based authentication and foreign key authorization.
+                  Full-stack movie review platform. Users register, log in securely, submit reviews with star ratings, and manage their own entries — protected by session-based auth and foreign key authorization. Earned Exemplary across all rubric categories.
                 </p>
                 <div class="row g-2 mb-3">
                   <div class="col-6">
                     <div class="small fw-bold text-uppercase text-muted-2 mb-1">Problem</div>
-                    <p class="small text-muted-2 mb-0">Build a secure multi-user CRUD platform with authentication, relational data, and protected routes.</p>
+                    <p class="small text-muted-2 mb-0">Build a secure multi-user CRUD platform with auth, relational data, and protected routes.</p>
                   </div>
                   <div class="col-6">
                     <div class="small fw-bold text-uppercase text-muted-2 mb-1">Result</div>
-                    <p class="small text-muted-2 mb-0">Earned Exemplary marks across all rubric categories: auth, CRUD, EF relationships, validation, and code quality.</p>
+                    <p class="small text-muted-2 mb-0">Exemplary marks: auth, CRUD, EF relationships, validation, and code quality — all categories.</p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap gap-1 mb-3">
@@ -302,34 +376,47 @@
                   <span class="badge text-bg-secondary">BCrypt</span>
                   <span class="badge text-bg-secondary">Bootstrap 5</span>
                 </div>
-                <div class="mt-auto d-flex gap-2 flex-wrap">
+                <div class="mt-auto d-flex gap-2 flex-wrap align-items-center">
                   <a href="https://github.com/palmert974/wos-recent-projects-2025" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-github"></i> View Code
+                    <i class="bi bi-github me-1"></i>View Code
                   </a>
-                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
-                    <i class="bi bi-lock me-1"></i>Local / Demo on Request
-                  </span>
+                  <span class="small text-muted-2" style="font-size:0.72rem;"><i class="bi bi-info-circle me-1"></i>Demo available on request</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- iTunes ETL Pipeline — WOS Python + SQL -->
+          <!-- ═══════════════════════════════════════
+               ITUNES ETL PIPELINE — Data Engineering
+               Python / pandas / SQLite
+               ═══════════════════════════════════════ -->
           <div class="col-lg-6">
             <div class="card h-100 bg-elevated border-0 shadow-sm project-card hover-lift">
-              <div class="d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(20,40,20,0.9), rgba(14,17,19,0.95)); aspect-ratio: 16/9;">
-                <div class="text-center p-4">
-                  <i class="bi bi-database-fill-gear text-accent" style="font-size: 3.5rem;"></i>
-                  <div class="mt-2 fw-bold text-white fs-6">iTunes ETL Pipeline</div>
-                  <div class="small text-muted-2">Python &bull; pandas &bull; SQLite</div>
+              <!-- Terminal / data pipeline visual -->
+              <div class="data-grid position-relative d-flex align-items-center justify-content-center"
+                   style="background:linear-gradient(160deg,#020a04 0%,#05140a 45%,#030c05 100%);aspect-ratio:16/9;overflow:hidden;font-family:monospace;">
+                <!-- Glow center -->
+                <div style="position:absolute;width:320px;height:320px;background:radial-gradient(circle,rgba(32,201,151,0.1) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;"></div>
+                <!-- Content -->
+                <div class="text-center" style="z-index:1;padding:1.5rem;">
+                  <div style="display:inline-block;background:rgba(32,201,151,0.07);border:1px solid rgba(32,201,151,0.22);border-radius:4px;padding:3px 13px;font-size:0.58rem;color:#20c997;letter-spacing:2px;margin-bottom:14px;text-transform:uppercase;">▶ Pipeline Active</div>
+                  <div style="font-size:clamp(1.6rem,4vw,2.6rem);font-weight:900;line-height:1;text-shadow:0 0 24px rgba(32,201,151,0.35);">
+                    <span style="color:#20c997;">iTunes</span><br>
+                    <span style="color:#fff;">ETL</span>
+                  </div>
+                  <div style="margin-top:14px;font-size:0.58rem;color:rgba(32,201,151,0.5);line-height:2.2;">
+                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Extract: iTunes API · 5 genres</div>
+                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Transform: pandas · dedupe · normalize</div>
+                    <div><span style="color:rgba(32,201,151,0.3);">→ </span>Load: SQLite · BI queries ready</div>
+                  </div>
                 </div>
               </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex align-items-start justify-content-between mb-2 flex-wrap gap-1">
                   <h3 class="h4 mb-0">iTunes ETL Pipeline</h3>
-                  <span class="badge" style="background: rgba(25,135,84,0.2); color: #20c997; border: 1px solid rgba(25,135,84,0.4);">Data Engineering</span>
+                  <span class="badge" style="background:rgba(25,135,84,0.18);color:#20c997;border:1px solid rgba(25,135,84,0.38);">Data Engineering</span>
                 </div>
-                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo &bull; Python &bull; WOS Data Track</div>
+                <div class="small text-muted-2 mb-2"><i class="bi bi-person me-1"></i>Solo · Python · WOS Data Track</div>
                 <p class="text-muted-2 mb-3">
                   End-to-end ETL pipeline that extracts music metadata across 5 genres (Reggae, Hip-Hop, Dancehall, Afrobeats, Soca) from the iTunes Search API, transforms and normalizes the data with pandas, then loads it into a SQLite database for business intelligence queries.
                 </p>
@@ -351,13 +438,11 @@
                   <span class="badge text-bg-secondary">ETL</span>
                   <span class="badge text-bg-secondary">Data Engineering</span>
                 </div>
-                <div class="mt-auto d-flex gap-2 flex-wrap">
+                <div class="mt-auto d-flex gap-2 flex-wrap align-items-center">
                   <a href="https://github.com/palmert974/itunes-etl-pipeline" class="btn btn-outline-light btn-sm" target="_blank" rel="noreferrer">
-                    <i class="bi bi-github"></i> View Code
+                    <i class="bi bi-github me-1"></i>View Code
                   </a>
-                  <span class="btn btn-sm" style="background: rgba(255,193,7,0.1); color: #ffc107; border: 1px solid rgba(255,193,7,0.3); cursor: default;">
-                    <i class="bi bi-terminal me-1"></i>CLI / Run Locally
-                  </span>
+                  <span class="small text-muted-2" style="font-size:0.72rem;"><i class="bi bi-terminal me-1"></i>CLI · run locally</span>
                 </div>
               </div>
             </div>
@@ -368,18 +453,18 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-5 bg-base">
+    <section class="py-5 bg-base" style="border-top:1px solid rgba(255,255,255,0.04);">
       <div class="container text-center">
         <h2 class="h3 mb-3">Let's Build Something Together</h2>
-        <p class="text-muted-2 mb-4">I'm always excited to work on new projects and collaborate with fellow developers.</p>
+        <p class="text-muted-2 mb-4">Open to collaborations, full-time roles, and new challenges.</p>
         <div class="d-flex justify-content-center gap-3">
-          <a href="contact.html" class="btn btn-accent">Get In Touch</a>
-          <a href="https://github.com/palmert974" target="_blank" class="btn btn-outline-light">View GitHub</a>
+          <a href="contact.html" class="btn btn-accent btn-magnetic">Get In Touch</a>
+          <a href="https://github.com/palmert974" target="_blank" class="btn btn-outline-light btn-magnetic">View GitHub</a>
         </div>
       </div>
     </section>
 
-    <footer class="footer bg-elevated border-top border-dark-subtle mt-5">
+    <footer class="footer bg-elevated border-top border-dark-subtle">
       <div class="container py-4">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -403,9 +488,7 @@
       </div>
     </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

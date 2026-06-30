@@ -185,6 +185,63 @@ document.querySelectorAll('a[title]').forEach(link => {
   }
 })();
 
+// ===== CURSOR GLOW (non-index pages) =====
+const cursorGlow = document.querySelector('.cursor-glow');
+if (cursorGlow) {
+  document.addEventListener('mousemove', (e) => {
+    cursorGlow.style.left = e.clientX + 'px';
+    cursorGlow.style.top = e.clientY + 'px';
+  });
+}
+
+// ===== COUNT-UP ANIMATION (data-target, for non-index pages) =====
+function animateCountUp(el) {
+  const raw = el.dataset.target;
+  if (!raw) return;
+  const suffix = el.dataset.suffix || '';
+  const target = parseFloat(raw);
+  const isDecimal = raw.includes('.');
+  const duration = 1600;
+  const start = performance.now();
+  function step(ts) {
+    const progress = Math.min((ts - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = eased * target;
+    let display = target >= 1000 ? Math.floor(value).toLocaleString()
+                : isDecimal ? value.toFixed(1)
+                : Math.floor(value).toString();
+    el.textContent = display + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const countUpObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCountUp(e.target); countUpObs.unobserve(e.target); } });
+}, { threshold: 0.6 });
+document.querySelectorAll('[data-target]').forEach(el => countUpObs.observe(el));
+
+// ===== MAGNETIC BUTTONS =====
+document.querySelectorAll('.btn-magnetic').forEach(btn => {
+  btn.addEventListener('mousemove', (e) => {
+    const r = btn.getBoundingClientRect();
+    btn.style.transform = `translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.22}px)`;
+  });
+  btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+});
+
+// ===== PROJECT FILTER =====
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('[data-category]');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.filter;
+    projectCards.forEach(card => { card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none'; });
+  });
+});
+
+// ===== ACTIVE NAVIGATION HIGHLIGHTING AND NAVBAR SCROLL EFFECT =====
 // Active navigation highlighting and navbar scroll effect
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
