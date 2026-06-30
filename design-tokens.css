@@ -1,0 +1,394 @@
+/**
+ * DESIGN TOKENS & SYSTEM
+ * Complete design system for portfolio (Chris Brown + Kanye aesthetic)
+ * Mobile-first, production-ready, Figma-aligned
+ */
+
+/* ============================================================================
+   1. COLOR TOKENS
+   ============================================================================ */
+:root {
+  /* PRIMARY PALETTE */
+  --color-primary-900: #0a0a0a;    /* Darkest: Hero/Footer background */
+  --color-primary-800: #0e1113;    /* Dark: Body background */
+  --color-primary-700: #151a1d;    /* Elevated: Cards, sections */
+  --color-primary-600: #1a1f23;    /* Medium: Hover states */
+  --color-primary-500: #252e33;    /* Light: Accents, borders */
+
+  /* ACCENT PALETTE (Red) */
+  --color-accent-900: #8a0f14;     /* Darkest: Hover */
+  --color-accent-700: #b01922;     /* Dark: Hover states */
+  --color-accent-500: #d41f2a;     /* Primary red */
+  --color-accent-300: #ff5555;     /* Light: Bright hover */
+  --color-accent-100: #ff9999;     /* Lightest: Background */
+
+  /* NEUTRAL PALETTE (Grayscale) */
+  --color-neutral-white: #ffffff;   /* Pure white */
+  --color-neutral-100: #f8f9fa;     /* Off-white */
+  --color-neutral-200: #e0e0e0;     /* Light gray */
+  --color-neutral-400: #b3b3b3;     /* Medium gray */
+  --color-neutral-600: #a9b1b8;     /* Muted gray */
+  --color-neutral-800: #6b7280;     /* Dark gray */
+  --color-neutral-900: #1f2937;     /* Darkest gray */
+
+  /* SEMANTIC COLORS */
+  --color-success: #28a745;         /* Green (validation) */
+  --color-warning: #ffc107;         /* Yellow (alerts) */
+  --color-danger: #dc3545;          /* Red (errors) */
+  --color-info: #17a2b8;            /* Cyan (info) */
+
+  /* GRADIENT COLORS */
+  --gradient-accent: linear-gradient(135deg, var(--color-accent-500), #ff6b6b, var(--color-accent-500));
+  --gradient-dark: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+  --gradient-hero: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.08), transparent), 
+                   radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.06), transparent);
+
+  /* TRANSPARENT LAYERS */
+  --color-overlay-light: rgba(255, 255, 255, 0.05);
+  --color-overlay-medium: rgba(0, 0, 0, 0.3);
+  --color-overlay-dark: rgba(0, 0, 0, 0.7);
+}
+
+/* ============================================================================
+   2. TYPOGRAPHY TOKENS
+   ============================================================================ */
+:root {
+  /* FONT FAMILIES */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* HEADING SCALE (H1-H6) */
+  --fs-h1: clamp(1.75rem, 8vw, 4.5rem);         /* Hero title: 28px mobile → 72px desktop */
+  --fs-h2: clamp(1.5rem, 5vw, 3.5rem);          /* Section title: 24px mobile → 56px desktop */
+  --fs-h3: clamp(1.25rem, 4vw, 2.5rem);         /* Subsection: 20px mobile → 40px desktop */
+  --fs-h4: clamp(1.1rem, 3vw, 1.8rem);          /* Card title: 18px mobile → 28px desktop */
+  --fs-h5: clamp(1rem, 2.5vw, 1.5rem);          /* Subtitle: 16px mobile → 24px desktop */
+  --fs-h6: 0.875rem;                             /* Small heading: 14px */
+
+  /* BODY TEXT SCALE */
+  --fs-body-lg: 1.125rem;                        /* Large body: 18px */
+  --fs-body: 1rem;                               /* Regular body: 16px */
+  --fs-body-sm: 0.9375rem;                       /* Small body: 15px */
+  --fs-caption: 0.8125rem;                       /* Caption: 13px */
+  --fs-label: 0.75rem;                           /* Label: 12px */
+
+  /* LINE HEIGHT SCALE */
+  --lh-tight: 1.1;                               /* Headlines */
+  --lh-normal: 1.5;                              /* Body text */
+  --lh-relaxed: 1.75;                            /* Long-form content */
+
+  /* LETTER SPACING */
+  --ls-tight: -0.02em;                           /* Headlines (negative) */
+  --ls-normal: 0;                                /* Body text */
+  --ls-wide: 0.5px;                              /* Uppercase labels */
+  --ls-wider: 1px;                               /* Spaced text */
+
+  /* FONT WEIGHTS */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+}
+
+/* ============================================================================
+   3. SPACING TOKENS (8px base unit)
+   ============================================================================ */
+:root {
+  /* PADDING & MARGINS */
+  --sp-0: 0;
+  --sp-1: 0.25rem;     /* 4px */
+  --sp-2: 0.5rem;      /* 8px */
+  --sp-3: 0.75rem;     /* 12px */
+  --sp-4: 1rem;        /* 16px */
+  --sp-5: 1.25rem;     /* 20px */
+  --sp-6: 1.5rem;      /* 24px */
+  --sp-8: 2rem;        /* 32px */
+  --sp-10: 2.5rem;     /* 40px */
+  --sp-12: 3rem;       /* 48px */
+  --sp-16: 4rem;       /* 64px */
+  --sp-20: 5rem;       /* 80px */
+  --sp-24: 6rem;       /* 96px */
+
+  /* GAPS (flex/grid) */
+  --gap-xs: 0.5rem;    /* 8px */
+  --gap-sm: 1rem;      /* 16px */
+  --gap-md: 1.5rem;    /* 24px */
+  --gap-lg: 2rem;      /* 32px */
+  --gap-xl: 3rem;      /* 48px */
+  --gap-2xl: 4rem;     /* 64px */
+
+  /* CONTAINER PADDING */
+  --container-padding-mobile: 1rem;   /* 16px mobile */
+  --container-padding-tablet: 1.5rem; /* 24px tablet */
+  --container-padding-desktop: 2rem;  /* 32px desktop */
+}
+
+/* ============================================================================
+   4. RADIUS TOKENS (Border radius scale)
+   ============================================================================ */
+:root {
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+}
+
+/* ============================================================================
+   5. SHADOW TOKENS (Elevation system - 4 levels)
+   ============================================================================ */
+:root {
+  /* ELEVATION 1: Subtle (cards, slight lift) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05),
+               0 1px 3px rgba(0, 0, 0, 0.1);
+
+  /* ELEVATION 2: Medium (hovered cards) */
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1),
+               0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* ELEVATION 3: Large (lifted elements) */
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15),
+               0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* ELEVATION 4: Extra Large (modals, dropdowns) */
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15),
+               0 10px 10px rgba(0, 0, 0, 0.1);
+
+  /* GLOW EFFECTS */
+  --glow-accent: 0 0 20px rgba(212, 31, 42, 0.3);
+  --glow-accent-strong: 0 0 40px rgba(212, 31, 42, 0.5);
+}
+
+/* ============================================================================
+   6. BREAKPOINT TOKENS (Mobile-first approach)
+   ============================================================================ */
+:root {
+  /* BREAKPOINTS (pixels) */
+  --bp-mobile: 320px;       /* Extra small phones */
+  --bp-sm: 576px;           /* Small phones, landscape */
+  --bp-md: 768px;           /* Tablets, small iPads */
+  --bp-lg: 992px;           /* Large tablets, small laptops */
+  --bp-xl: 1200px;          /* Desktops */
+  --bp-2xl: 1400px;         /* Large desktops */
+  --bp-3xl: 1600px;         /* Ultra-wide */
+}
+
+/* ============================================================================
+   7. TRANSITION & ANIMATION TOKENS
+   ============================================================================ */
+:root {
+  /* TIMING FUNCTIONS */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.22, 0.61, 0.18, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* DURATIONS */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+  --duration-slowest: 1500ms;
+
+  /* TRANSITION PRESETS */
+  --transition-fast: all var(--duration-fast) var(--ease-in-out);
+  --transition-normal: all var(--duration-normal) var(--ease-in-out);
+  --transition-slow: all var(--duration-slow) var(--ease-smooth);
+  --transition-colors: color var(--duration-normal) var(--ease-in-out), 
+                       background-color var(--duration-normal) var(--ease-in-out);
+  --transition-transform: transform var(--duration-normal) var(--ease-in-out);
+}
+
+/* ============================================================================
+   8. Z-INDEX TOKENS (Stacking context)
+   ============================================================================ */
+:root {
+  --z-hide: -1;
+  --z-base: 0;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal-backdrop: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-notification: 100;
+}
+
+/* ============================================================================
+   9. RESPONSIVE UTILITIES (Mobile-first)
+   ============================================================================ */
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) {
+  :root {
+    --container-padding: var(--container-padding-tablet);
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: var(--container-padding-tablet);
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  :root {
+    --container-padding: var(--container-padding-desktop);
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: var(--container-padding-desktop);
+  }
+}
+
+/* ============================================================================
+   10. ACCESSIBILITY TOKENS
+   ============================================================================ */
+:root {
+  /* FOCUS STATES */
+  --focus-outline: 2px solid var(--color-accent-500);
+  --focus-outline-offset: 2px;
+
+  /* REDUCED MOTION */
+  --motion-reduce: prefers-reduced-motion: reduce;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0.01ms;
+    --duration-normal: 0.01ms;
+    --duration-slow: 0.01ms;
+    --duration-slower: 0.01ms;
+    --duration-slowest: 0.01ms;
+  }
+}
+
+/* ============================================================================
+   11. APPLY TOKENS TO BASE ELEMENTS
+   ============================================================================ */
+
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--color-neutral-white);
+  background: var(--color-primary-800);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
+
+p {
+  margin: 0;
+  line-height: var(--lh-normal);
+}
+
+a {
+  color: var(--color-accent-500);
+  text-decoration: none;
+  transition: var(--transition-colors);
+}
+
+a:hover {
+  color: var(--color-accent-300);
+}
+
+button, input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+/* Remove default focus on buttons */
+button:focus-visible {
+  outline: var(--focus-outline);
+}
+
+/* ============================================================================
+   12. UTILITY CLASSES (Common patterns)
+   ============================================================================ */
+
+.text-primary { color: var(--color-neutral-white); }
+.text-secondary { color: var(--color-neutral-400); }
+.text-accent { color: var(--color-accent-500); }
+.text-muted { color: var(--color-neutral-600); }
+
+.bg-primary { background: var(--color-primary-900); }
+.bg-secondary { background: var(--color-primary-700); }
+.bg-accent { background: var(--color-accent-500); }
+.bg-overlay { background: var(--color-overlay-dark); }
+
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* Spacing utilities */
+.p-1 { padding: var(--sp-1); }
+.p-2 { padding: var(--sp-2); }
+.p-4 { padding: var(--sp-4); }
+.p-6 { padding: var(--sp-6); }
+.p-8 { padding: var(--sp-8); }
+
+.m-0 { margin: 0; }
+.m-auto { margin: auto; }
+.mt-4 { margin-top: var(--sp-4); }
+.mb-4 { margin-bottom: var(--sp-4); }
+
+.gap-1 { gap: var(--gap-xs); }
+.gap-2 { gap: var(--gap-sm); }
+.gap-4 { gap: var(--gap-md); }
+.gap-6 { gap: var(--gap-lg); }
+
+/* Flex utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+/* Grid utilities */
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 768px) {
+  .grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-cols-2 { grid-template-columns: 1fr; }
+}
