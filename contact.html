@@ -21,8 +21,11 @@
     <meta name="twitter:title" content="Contact Tamara Palmer — Open to Full-Time Roles" />
     <meta name="twitter:description" content="DevOps Engineer & Full-Stack Developer. Dallas, TX. Remote & hybrid. Available now." />
 
-    <meta name="theme-color" content="#d41f2a" />
+    <meta name="theme-color" content="#7c3aed" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css" />
@@ -47,14 +50,15 @@
     </nav>
     
     <!-- Contact Hero -->
-    <section class="py-4 bg-base border-top border-dark-subtle">
+    <section class="py-5 bg-base" style="padding-top:5rem !important;border-bottom:1px solid var(--border);">
       <div class="container">
         <div class="text-center">
-          <h1 class="display-5 fw-bold mb-3 animate-fade-in">Let's Connect</h1>
-          <div class="mx-auto mb-3" style="width: 80px; height: 4px; background: var(--accent); border-radius: 2px;"></div>
-          <p class="lead text-light mb-0 animate-fade-in-delay">
-            <strong class="text-accent">Open to Software Engineering &amp; Technology roles</strong><br>
-            <span class="text-muted-2">Available for immediate start • Open to remote &amp; hybrid positions</span>
+          <p class="mb-2" style="font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent-3);font-weight:600;">Get In Touch</p>
+          <h1 class="display-4 fw-bold mb-3" style="font-family:'Space Grotesk',sans-serif;">Let's Connect</h1>
+          <div class="section-divider"></div>
+          <p class="lead mb-0" style="color:var(--text-2);">
+            <strong class="text-white">Open to Software Engineering &amp; DevOps roles</strong><br>
+            Available now · Remote &amp; hybrid · Dallas, TX
           </p>
         </div>
       </div>
@@ -68,7 +72,7 @@
             <div class="row g-4">
               <!-- Contact Form -->
               <div class="col-lg-7">
-                <div class="card bg-elevated border-0 shadow h-100 hover-lift">
+                <div class="card border-0 shadow h-100 hover-lift" style="background:var(--surface);">
                   <div class="card-body p-4">
                     <h4 class="fw-bold mb-4 text-white">
                       <i class="bi bi-envelope-fill text-accent me-2"></i>Send a Message
@@ -121,7 +125,7 @@
               
               <!-- Contact Info Sidebar -->
               <div class="col-lg-5">
-                <div class="card bg-elevated border-0 shadow h-100 hover-lift">
+                <div class="card border-0 shadow h-100 hover-lift" style="background:var(--surface);">
                   <div class="card-body p-4">
                     <h4 class="fw-bold mb-4 text-white">Get In Touch</h4>
                     
@@ -201,10 +205,10 @@
             </div>
             
             <!-- Quick Info Bar -->
-            <div class="mt-5 p-4 rounded-3" style="background: rgba(212,31,42,0.06); border: 1px solid rgba(212,31,42,0.15);">
+            <div class="mt-5 p-4 rounded-3" style="background:rgba(124,58,237,0.07);border:1px solid rgba(124,58,237,0.2);">
               <div class="text-center mb-3">
-                <span class="badge bg-accent px-3 py-2 fs-6">
-                  <i class="bi bi-circle-fill me-2" style="font-size:0.5rem; vertical-align:middle;"></i>Available Now
+                <span class="badge px-3 py-2" style="background:linear-gradient(135deg,var(--accent),var(--accent-2));font-size:0.85rem;">
+                  <i class="bi bi-circle-fill me-2" style="font-size:0.45rem;vertical-align:middle;"></i>Available Now
                 </span>
               </div>
               <div class="d-flex justify-content-center flex-wrap gap-4">
@@ -244,7 +248,7 @@
       </div>
     </section>
 
-    <footer class="footer bg-elevated border-top border-dark-subtle mt-5">
+    <footer class="footer mt-5">
       <div class="container py-4">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -272,6 +276,8 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

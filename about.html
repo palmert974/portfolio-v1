@@ -22,129 +22,22 @@
     <meta name="twitter:description" content="First graduate of Northeastern University Miami campus. Speaker at React Miami & eMerge Americas. Open to full-time roles." />
     <meta name="twitter:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/Headshot.jpeg" />
 
-    <meta name="theme-color" content="#d41f2a" />
+    <meta name="theme-color" content="#7c3aed" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .about-hero {
-        padding: 80px 0 40px;
-        background: linear-gradient(180deg, rgba(212,31,42,0.03) 0%, transparent 100%);
-      }
-      .about-content {
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      .about-content p {
-        font-size: 1.125rem;
-        line-height: 1.8;
-        margin-bottom: 1.5rem;
-        color: #d0d0d0;
-        font-weight: 300;
-      }
-      .section-title {
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--accent);
-        margin-bottom: 2rem;
-      }
-      .article-card {
-        background: var(--elevated);
-        border-radius: 12px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(255,255,255,0.05);
-        position: relative;
-        overflow: hidden;
-      }
-      .article-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(90deg, var(--accent), #ff6b6b);
-      }
-      .article-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-        border-color: rgba(212,31,42,0.2);
-      }
-      .article-meta {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-        font-size: 0.875rem;
-        color: var(--muted);
-      }
-      .article-title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        color: #fff;
-      }
-      .article-excerpt {
-        color: #b0b0b0;
-        line-height: 1.7;
-        margin-bottom: 1.5rem;
-      }
-      .skill-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-      .skill-item {
-        text-align: center;
-        padding: 1.5rem 1rem;
-        background: rgba(255,255,255,0.03);
-        border-radius: 8px;
-        border: 1px solid rgba(255,255,255,0.05);
-        transition: all 0.3s ease;
-      }
-      .skill-item:hover {
-        background: rgba(212,31,42,0.1);
-        border-color: rgba(212,31,42,0.3);
-        transform: translateY(-2px);
-      }
-      .skill-icon {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: var(--accent);
-      }
-      .timeline-item {
-        position: relative;
-        padding-left: 3rem;
-        margin-bottom: 2.5rem;
-      }
-      .timeline-item::before {
-        content: '';
-        position: absolute;
-        left: 8px;
-        top: 8px;
-        width: 8px;
-        height: 8px;
-        background: var(--accent);
-        border-radius: 50%;
-      }
-      .timeline-item::after {
-        content: '';
-        position: absolute;
-        left: 11px;
-        top: 16px;
-        width: 2px;
-        height: calc(100% + 1.5rem);
-        background: rgba(212,31,42,0.2);
-      }
-      .timeline-item:last-child::after {
-        display: none;
-      }
+      .about-content { max-width: 700px; margin: 0 auto; }
+      .about-content p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--text-2); }
+      .section-title { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-3); margin-bottom: 1.75rem; }
+      .timeline-item { position: relative; padding-left: 3rem; margin-bottom: 2.5rem; }
+      .timeline-item::before { content: ''; position: absolute; left: 8px; top: 8px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 8px rgba(124,58,237,0.6); }
+      .timeline-item::after { content: ''; position: absolute; left: 11px; top: 16px; width: 2px; height: calc(100% + 1.5rem); background: rgba(124,58,237,0.2); }
+      .timeline-item:last-child::after { display: none; }
     </style>
   </head>
   <body class="bg-base text-light">
@@ -205,7 +98,7 @@
     </section>
 
     <!-- Main Content -->
-    <section class="py-3" style="background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.08), transparent), radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.06), transparent);">
+    <section class="py-3" style="background: radial-gradient(1200px 400px at 5% -20%, rgba(124,58,237,0.07), transparent), radial-gradient(800px 300px at 95% 0%, rgba(245,158,11,0.04), transparent);">
       <div class="container">
         <div class="about-content">
 
@@ -269,9 +162,9 @@
                   <div class="speaking-icon"><i class="bi bi-mic-fill"></i></div>
                   <div class="fw-bold text-white mb-1">React Miami</div>
                   <div class="small text-muted-2 mb-1">Speaker &amp; Panelist</div>
-                  <div class="small mb-1" style="color: rgba(212,31,42,0.85);">2024</div>
+                  <div class="small mb-1" style="color:var(--gold-2);">2024</div>
                   <div class="small text-muted-2">Tech career transitions &amp; first-generation graduate experiences</div>
-                  <div class="mt-2"><span class="badge" style="background:rgba(212,31,42,0.12); color:var(--accent); font-size:0.7rem;">Conference</span></div>
+                  <div class="mt-2"><span class="badge" style="background:rgba(124,58,237,0.15);color:var(--accent-3);font-size:0.7rem;">Conference</span></div>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -279,9 +172,9 @@
                   <div class="speaking-icon"><i class="bi bi-globe-americas"></i></div>
                   <div class="fw-bold text-white mb-1">eMerge Americas</div>
                   <div class="small text-muted-2 mb-1">Speaker &amp; Panelist</div>
-                  <div class="small mb-1" style="color: rgba(212,31,42,0.85);">2024</div>
+                  <div class="small mb-1" style="color:var(--gold-2);">2024</div>
                   <div class="small text-muted-2">Diversity in tech &amp; breaking into software engineering</div>
-                  <div class="mt-2"><span class="badge" style="background:rgba(212,31,42,0.12); color:var(--accent); font-size:0.7rem;">Conference</span></div>
+                  <div class="mt-2"><span class="badge" style="background:rgba(124,58,237,0.15);color:var(--accent-3);font-size:0.7rem;">Conference</span></div>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -289,9 +182,9 @@
                   <div class="speaking-icon"><i class="bi bi-people-fill"></i></div>
                   <div class="fw-bold text-white mb-1">Women's History Month</div>
                   <div class="small text-muted-2 mb-1">Featured Panelist</div>
-                  <div class="small mb-1" style="color: rgba(212,31,42,0.85);">2024</div>
+                  <div class="small mb-1" style="color:var(--gold-2);">2024</div>
                   <div class="small text-muted-2">Women in technology leadership &amp; non-traditional pathways</div>
-                  <div class="mt-2"><span class="badge" style="background:rgba(212,31,42,0.12); color:var(--accent); font-size:0.7rem;">Panel</span></div>
+                  <div class="mt-2"><span class="badge" style="background:rgba(124,58,237,0.15);color:var(--accent-3);font-size:0.7rem;">Panel</span></div>
                 </div>
               </div>
             </div>
@@ -520,7 +413,7 @@
       </div>
     </section>
 
-    <footer class="footer bg-elevated border-top border-dark-subtle mt-5">
+    <footer class="footer mt-5">
       <div class="container py-4">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -548,6 +441,8 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
