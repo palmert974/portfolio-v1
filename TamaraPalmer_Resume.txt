@@ -1,0 +1,185 @@
+TAMARA PALMER
+Dallas, TX | (786) 453-6382 | TamaraPalmer013@yahoo.com
+GitHub: github.com/palmert974 | LinkedIn: linkedin.com/in/tamara-palmer-
+
+===============================================================================
+PROFESSIONAL SUMMARY
+===============================================================================
+
+Associate DevOps Engineer and Full-Stack Developer with 4+ years of experience 
+building enterprise applications, automating workflows, and optimizing data 
+pipelines. Expertise in C#/.NET, React, Python, SQL Server, and cloud 
+infrastructure. Proven track record of delivering high-impact solutions at 
+Fortune 500 companies including Amazon, Verizon, and AAA Auto Club Enterprises.
+
+KEY SKILLS: C#, .NET MVC, React, JavaScript, Python, SQL Server, SSIS, DevOps, 
+Node.js, Express, REST APIs, AWS, Azure, Git, Agile/Scrum, Tableau, Excel
+
+===============================================================================
+PROFESSIONAL EXPERIENCE
+===============================================================================
+
+ASSOCIATE DEVOPS ENGINEER
+AAA Auto Club Enterprises (Contract via Workforce Opportunity Services)
+October 2025 – Present | Dallas, TX
+
+• Build and debug full-stack features in C#/.NET and JavaScript/React, 
+  delivering 4+ production releases quarterly
+• Automate daily data pulls with Python delta-logic scripts, reducing manual 
+  processing time by 35%
+• Co-develop SSIS packages for SQL Server reporting tables, processing 5,200+ 
+  files annually at 99.8% accuracy
+• Maintain Tableau dashboard feeds via SharePoint, enabling data-driven 
+  decisions across 50+ stakeholders
+• Collaborate in Agile/Scrum sprints, estimating user stories and delivering 
+  iterative enhancements
+
+JUNIOR SOFTWARE DEVELOPER
+Workforce Opportunity Services (WOS Program)
+June 2025 – Present | Dallas, TX
+
+• Completed immersive 3-month software development bootcamp training in 
+  full-stack development
+• Built full-stack features and REST APIs using C#/.NET MVC backend and React 
+  frontend
+• Participated in Agile/Scrum sprints with story estimation and iterative 
+  delivery cycles
+• Demonstrated proficiency in database design, query optimization, and testing
+
+QUALITY ANALYST
+Visio Lending
+February 2022 – June 2025 | Houston, TX (Remote)
+
+• Reviewed 5,200+ loan files annually at 99.8% accuracy, exceeding industry 
+  standards
+• Automated recurring workflows using Salesforce and Excel, reducing processing 
+  time by 35%
+• Served as cross-functional liaison between compliance, legal, and development 
+  teams
+• Trained and mentored 8+ junior analysts on quality assurance processes
+
+MORTGAGE UNDERWRITER / ANALYST
+United Wholesale Mortgage
+January 2021 – February 2022 | Pontiac, MI
+
+• Underwrote residential mortgage files at nation's #1 wholesale lender, 
+  processing 200+ files monthly
+• Ran automated underwriting through Desktop Underwriter (DU) and Loan Program 
+  Advisor (LP) systems
+• Analyzed income, asset, and credit documentation in Excel and Salesforce
+• Maintained 98% accuracy rate with zero compliance violations
+
+TECHNICAL ANALYST
+Verizon
+February 2019 – December 2020 | Austin, TX
+
+• Provided technical training and onboarding for 50+ business clients
+• Exceeded performance targets by 120%, receiving employee recognition awards
+• Acted as bridge between customers and engineering teams via Salesforce and 
+  ServiceNow ticketing
+• Resolved complex technical issues with 98% first-contact resolution rate
+
+TECHNICAL ANALYST
+Amazon
+October 2015 – February 2019 | Multiple Locations
+
+• Provided technical support for 1,000+ clients at 98% issue-resolution rate
+• Drove process improvements in inventory management and customer workflows
+• Built comprehensive knowledge-base resources, improving team response times by 
+  30%
+• Trained and onboarded 20+ new team members
+
+===============================================================================
+EDUCATION
+===============================================================================
+
+B.S. INFORMATION TECHNOLOGY
+Northeastern University, Miami, FL
+December 2024 | GPA: 3.7/4.0 (Dean's List)
+
+• First Graduate of Northeastern University Miami Campus
+• Focus: Software Development & Data Analytics
+• Global Recreational Ambassador (Sep–Dec 2024)
+• Capstone Project: Full-stack application with React, Node.js, and MySQL
+
+SOFTWARE ENGINEERING BOOTCAMP
+BrainStation
+February – May 2023 | Completed (GPA: 4.0)
+
+• Chase Scholarship Recipient (Top 25% of class)
+• Core Technologies: React, Node.js, JavaScript, MySQL, HTML/CSS
+• 15+ Agile user stories delivered across full-stack projects
+• Capstone Project: E-commerce platform with 98% test coverage
+
+===============================================================================
+TECHNICAL SKILLS
+===============================================================================
+
+BACKEND & DEVOPS
+• Languages: C#, Python, JavaScript (Node.js), SQL
+• Frameworks: .NET MVC, Express.js, REST APIs
+• Databases: SQL Server, MySQL, T-SQL
+• Tools: SSIS (SQL Server Integration Services), Git, Azure, AWS, Agile/Scrum
+
+FRONTEND
+• Technologies: React, JavaScript (ES6+), HTML5, CSS3, Bootstrap
+• Responsive Design: Mobile-first, CSS Grid, Flexbox
+• Libraries: React Hooks, State Management, Component Architecture
+
+DATA & ANALYTICS
+• SQL: Complex queries, stored procedures, indexing optimization
+• Tableau: Dashboard creation and data visualization
+• Data Processing: Python scripts, automated pipelines, delta-logic automation
+• Excel: Advanced formulas, pivot tables, VBA automation
+
+CLOUD & INFRASTRUCTURE
+• Platforms: AWS, Azure
+• DevOps Practices: CI/CD, automated deployments
+• Monitoring: Application performance tracking and optimization
+
+===============================================================================
+CERTIFICATIONS & ACHIEVEMENTS
+===============================================================================
+
+• Chase Scholarship Recipient (Top 25% – BrainStation, 2023)
+• Hackathon Winner (Full-Stack Web Development, 2023)
+• Speaker: React Miami & eMerge Americas Tech Conferences (2024)
+• First-Generation College Graduate
+• Dean's List (Northeastern University, 2024)
+• 99.8% Accuracy in Quality Assurance & Code Review
+• 120% Performance Above Target (Verizon, 2020)
+
+===============================================================================
+PORTFOLIO & PROJECTS
+===============================================================================
+
+PORTFOLIO WEBSITE (React, Bootstrap, Custom CSS)
+• Modern, responsive portfolio showcasing technical skills and projects
+• Features: Smooth animations, interactive timeline, project carousel
+• Optimized for ATS (Applicant Tracking Systems) and mobile devices
+• Live: portfolio-v1-blond-rho.vercel.app
+
+ENTERPRISE DATA PIPELINE (Python, SQL Server)
+• Automated daily data pull scripts using delta-logic
+• Processes 5,200+ records with 99.8% accuracy
+• Integrated with SSIS packages for SQL Server reporting
+
+FULL-STACK E-COMMERCE APPLICATION (React, Node.js, MySQL)
+• RESTful API backend with authentication and authorization
+• React frontend with state management and responsive design
+• 98% test coverage with Jest and React Testing Library
+
+===============================================================================
+LANGUAGES
+===============================================================================
+
+English: Native | Spanish: Conversational
+
+===============================================================================
+ADDITIONAL INFORMATION
+===============================================================================
+
+• Open to Full-Time and Contract Opportunities
+• Available for Immediate Start
+• Willing to Relocate (currently Dallas, TX)
+• Remote Work Experience: 4+ years
