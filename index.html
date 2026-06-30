@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tamara Palmer | DevOps Engineer & Full-Stack Developer | Dallas, TX</title>
-    <meta name="description" content="Tamara Palmer — Associate DevOps Engineer & Full-Stack Developer in Dallas, TX. Specializes in C#/.NET, React, Python, SQL Server, and SSIS. Hackathon winner. Speaker at React Miami & eMerge Americas. Open to full-time roles." />
-    <meta name="keywords" content="Tamara Palmer, DevOps Engineer, Software Engineer, Full-Stack Developer, React Developer, C# Developer, Python, SQL Server, Dallas TX, remote, Associate DevOps, .NET, SSIS, Tableau" />
+    <meta name="description" content="Tamara Palmer — Associate DevOps Engineer & Full-Stack Developer. Specializing in C#/.NET, React, Python, SQL Server, SSIS, and cloud infrastructure. Building enterprise applications at AAA Auto Club." />
+    <meta name="keywords" content="Tamara Palmer, DevOps Engineer, Full-Stack Developer, C#, .NET, React, Python, SQL Server, Dallas, Software Engineer" />
     <meta name="author" content="Tamara Palmer" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://portfolio-v1-blond-rho.vercel.app/" />
@@ -14,15 +14,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://portfolio-v1-blond-rho.vercel.app/" />
     <meta property="og:title" content="Tamara Palmer | DevOps Engineer & Full-Stack Developer" />
-    <meta property="og:description" content="Associate DevOps Engineer & Full-Stack Developer. C#/.NET, React, Python, SQL Server. Hackathon winner. Speaker at React Miami & eMerge Americas. Open to full-time roles." />
+    <meta property="og:description" content="Associate DevOps Engineer & Full-Stack Developer specializing in C#/.NET, React, Python, and SQL Server." />
     <meta property="og:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/Headshot.jpeg" />
-    <meta property="og:site_name" content="Tamara Palmer Portfolio" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tamara Palmer | DevOps Engineer & Full-Stack Developer" />
-    <meta name="twitter:description" content="Associate DevOps Engineer building enterprise applications at AAA Auto Club. C#/.NET, React, Python. Open to full-time roles." />
-    <meta name="twitter:image" content="https://portfolio-v1-blond-rho.vercel.app/assets/Headshot.jpeg" />
+    <meta name="twitter:description" content="Building enterprise applications and automation pipelines at AAA Auto Club." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -30,159 +28,294 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Tamara Palmer",
-      "jobTitle": "Associate DevOps Engineer",
-      "description": "Software Engineer specializing in C#/.NET, React, Python, and SQL Server. Associate DevOps Engineer at AAA Auto Club Enterprises. First-Generation Graduate of Northeastern University. Hackathon winner. Speaker at React Miami and eMerge Americas.",
+      "jobTitle": ["Associate DevOps Engineer", "Full-Stack Developer"],
+      "description": "Software Engineer specializing in C#/.NET, React, Python, SQL Server, SSIS, and DevOps.",
       "url": "https://portfolio-v1-blond-rho.vercel.app",
       "email": "TamaraPalmer013@yahoo.com",
-      "telephone": "+17864536382",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dallas",
         "addressRegion": "TX",
         "addressCountry": "US"
       },
-      "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "Northeastern University" },
-        { "@type": "EducationalOrganization", "name": "BrainStation" }
-      ],
       "worksFor": {
         "@type": "Organization",
         "name": "AAA Auto Club Enterprises"
       },
-      "sameAs": [
-        "https://github.com/palmert974",
-        "https://www.linkedin.com/in/tamara-palmer-"
-      ],
-      "knowsAbout": ["C#", ".NET MVC", "React", "Python", "JavaScript", "SQL Server", "SSIS", "DevOps", "Node.js", "Express.js", "Tableau", "Agile", "REST APIs"]
+      "sameAs": ["https://github.com/palmert974", "https://www.linkedin.com/in/tamara-palmer-"],
+      "knowsAbout": ["C#", ".NET", "React", "Python", "JavaScript", "SQL Server", "SSIS", "DevOps", "Node.js", "Express", "Tableau", "AWS"]
     }
     </script>
 
     <meta name="theme-color" content="#d41f2a" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    
+    <!-- Google Fonts: Playfair Display (serif) + Inter (sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+      /* Typography: Playfair Display (serif headlines) + Inter (sans body) */
+      :root {
+        --font-serif: 'Playfair Display', Georgia, serif;
+        --font-sans: 'Inter', -apple-system, sans-serif;
+        --accent: #d41f2a;
+        --accent-light: #ff5555;
+      }
+
+      body { font-family: var(--font-sans); }
+      h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); font-weight: 700; }
+
+      /* Hero section: fullscreen, centered, modern */
+      .hero-animated {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.08), transparent),
+                    radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.06), transparent);
+      }
+
+      .hero-animated h1 {
+        font-size: clamp(2rem, 8vw, 4rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-animated .hero-subtitle {
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
+        color: #b3b3b3;
+        margin-bottom: 2rem;
+        font-weight: 500;
+      }
+
+      /* Hero metrics: responsive grid */
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+        margin: 2.5rem 0;
+      }
+
+      .metric-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+        background: rgba(212, 31, 42, 0.1);
+        border: 1px solid rgba(212, 31, 42, 0.25);
+        transition: all 0.3s ease;
+      }
+
+      .metric-card:hover {
+        background: rgba(212, 31, 42, 0.15);
+        border-color: rgba(212, 31, 42, 0.5);
+        transform: translateY(-4px);
+      }
+
+      .metric-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+      }
+
+      .metric-label {
+        font-size: 0.75rem;
+        color: #b3b3b3;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 0.5rem;
+      }
+
+      /* CTA Buttons: minimal, modern */
+      .btn-primary {
+        background: var(--accent);
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 0.85rem 2rem;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+      }
+
+      .btn-primary:hover {
+        background: var(--accent-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(212, 31, 42, 0.3);
+      }
+
+      .btn-secondary {
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        background: transparent;
+        color: #fff;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 0.85rem 2rem;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(212, 31, 42, 0.1);
+      }
+
+      /* Brand logos: horizontal scroll on mobile */
+      .brand-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin: 2rem 0;
+      }
+
+      .brand-badge {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        color: #b3b3b3;
+        transition: all 0.3s ease;
+      }
+
+      .brand-badge:hover {
+        background: rgba(212, 31, 42, 0.1);
+        border-color: var(--accent);
+        color: #fff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero-animated h1 { font-size: 2rem; }
+        .hero-animated .hero-subtitle { font-size: 1rem; }
+        .hero-metrics { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .metric-card { padding: 1rem; }
+        .metric-number { font-size: 1.25rem; }
+      }
+
+      @media (max-width: 576px) {
+        .hero-animated h1 { font-size: 1.75rem; }
+        .hero-metrics { grid-template-columns: 1fr; gap: 0.5rem; }
+      }
+    </style>
   </head>
   <body class="bg-base text-light">
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent sticky-top" aria-label="Primary">
+    <!-- Navigation: Sticky, minimal -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent sticky-top" aria-label="Primary" style="backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05);">
       <div class="container">
-        <a class="navbar-brand fw-semibold" href="index.html">Tamara Palmer</a>
+        <a class="navbar-brand fw-semibold" href="index.html" style="font-family: var(--font-serif); font-size: 1.3rem;">Tamara Palmer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html" data-nav-link="hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#highlights" data-nav-link="highlights">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-nav-link="journey">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-        
+
     <!-- Open to Work Banner -->
     <div class="text-center py-2" style="background: rgba(212,31,42,0.12); border-bottom: 1px solid rgba(212,31,42,0.2);">
-      <span class="small fw-semibold text-white"><i class="bi bi-circle-fill text-accent me-2" style="font-size:0.5rem; vertical-align:middle;"></i>Open to new opportunities &nbsp;·&nbsp; <strong>DevOps Engineer · Full-Stack Developer · Software Engineer</strong> &nbsp;·&nbsp; Remote &amp; Hybrid &nbsp;·&nbsp; Available Now</span>
+      <span class="small fw-semibold text-white">
+        <i class="bi bi-circle-fill text-accent me-2" style="font-size:0.5rem; vertical-align:middle;"></i>
+        Open to new opportunities · <strong>DM on LinkedIn</strong>
+      </span>
     </div>
 
-    <!-- Animated Hero Section -->
-    <header class="hero-animated min-vh-100 d-flex align-items-center position-relative">
+    <!-- ===== HERO SECTION: FULLSCREEN, MODERN ===== -->
+    <header class="hero-animated" id="hero" data-glow-hero>
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="animate-fade-in">
-              <p class="text-accent fw-semibold mb-3 animate-slide-left">
-                Associate DevOps Engineer &amp; Full-Stack Developer · Dallas, TX
-              </p>
-              <h1 class="display-3 fw-bold mb-4">
-                Hi, I'm <span class="gradient-text">Tamara Palmer</span>
-              </h1>
-              <div class="fs-4 mb-4 text-muted-2">
-                I build
-                <span class="text-light fw-semibold" id="rotating-text">full-stack applications</span>
-              </div>
-              <p class="lead text-muted-2 mb-4 animate-fade-in-delay">
-                Associate DevOps Engineer specializing in <strong class="text-white">C#/.NET, React, Python automation, and SQL Server</strong>. Currently building enterprise applications at AAA Auto Club Enterprises through Workforce Opportunity Services. First-Generation college graduate (Northeastern University, GPA 3.7), Chase Scholarship recipient, and hackathon winner with experience spanning Amazon, Verizon, and Fortune 500 clients. Speaker at React Miami and eMerge Americas.
-              </p>
-              <!-- Impact Metrics -->
-              <div class="d-flex flex-wrap gap-3 mb-4 animate-fade-up">
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">99.8%</span>
-                  <span class="small text-muted-2">Accuracy</span>
-                </div>
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">5,200+</span>
-                  <span class="small text-muted-2">Files Reviewed</span>
-                </div>
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">35%</span>
-                  <span class="small text-muted-2">Faster Processing</span>
-                </div>
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">120%</span>
-                  <span class="small text-muted-2">Above Target</span>
-                </div>
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">10+</span>
-                  <span class="small text-muted-2">Years Experience</span>
-                </div>
-                <div class="d-flex align-items-center gap-2 px-3 py-2 rounded-3" style="background: rgba(212,31,42,0.1); border: 1px solid rgba(212,31,42,0.25);">
-                  <span class="fw-bold text-white">3.7</span>
-                  <span class="small text-muted-2">GPA · Dean's List</span>
-                </div>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center" data-scroll data-delay="0">
+            <!-- Main Headline -->
+            <h1 class="gradient-text" style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 1rem;">
+              Hi, I'm <span style="color: #fff;">Tamara Palmer</span>
+            </h1>
 
-              <!-- Brand Logos Strip -->
-              <div class="mb-4 animate-fade-in-delay">
-                <p class="small text-muted-2 mb-2">Experience from:</p>
-                <div class="d-flex flex-wrap gap-3 align-items-center">
-                  <span class="badge px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.06); color: #c0c0c0; font-size:0.75rem;">Amazon</span>
-                  <span class="badge px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.06); color: #c0c0c0; font-size:0.75rem;">Verizon</span>
-                  <span class="badge px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.06); color: #c0c0c0; font-size:0.75rem;">AAA Auto Club</span>
-                  <span class="badge px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.06); color: #c0c0c0; font-size:0.75rem;">Northeastern University</span>
-                  <span class="badge px-3 py-2 fw-semibold" style="background: rgba(255,255,255,0.06); color: #c0c0c0; font-size:0.75rem;">BrainStation</span>
-                </div>
-              </div>
+            <!-- Subtitle -->
+            <p class="hero-subtitle" data-scroll data-delay="100">
+              Associate DevOps Engineer & Full-Stack Developer
+            </p>
 
-              <div class="d-flex flex-wrap gap-3 animate-fade-up">
-                <a href="projects.html" class="btn btn-accent btn-lg">
-                  <i class="bi bi-folder2-open me-2"></i>View Projects
-                </a>
-                <a href="about.html" class="btn btn-outline-light btn-lg">
-                  <i class="bi bi-person me-2"></i>Learn More
-                </a>
+            <!-- Description -->
+            <p class="lead text-muted-2 mb-4" style="max-width: 700px; margin-left: auto; margin-right: auto;" data-scroll data-delay="200">
+              I build <strong class="text-white">enterprise applications</strong> with <strong class="text-accent">C#/.NET, React, Python,</strong> and <strong class="text-white">SQL Server</strong>. Currently optimizing data pipelines and automating workflows at AAA Auto Club.
+            </p>
+
+            <!-- Hero Metrics: Count-Up Numbers -->
+            <div class="hero-metrics" data-scroll data-delay="300">
+              <div class="metric-card">
+                <span class="metric-number" data-count="99.8">99.8%</span>
+                <span class="metric-label">Accuracy</span>
               </div>
-              
-              <!-- Quick Links -->
-              <div class="mt-5 d-flex gap-3 animate-fade-in-delay">
-                <a href="https://github.com/palmert974" target="_blank" class="text-muted-2 fs-4" title="GitHub">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/tamara-palmer-" target="_blank" class="text-muted-2 fs-4" title="LinkedIn">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="mailto:TamaraPalmer013@yahoo.com" class="text-muted-2 fs-4" title="Email">
-                  <i class="bi bi-envelope"></i>
-                </a>
+              <div class="metric-card">
+                <span class="metric-number" data-count="5200">5,200+</span>
+                <span class="metric-label">Files Reviewed</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-number" data-count="35">35%</span>
+                <span class="metric-label">Faster</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-number" data-count="120">120%</span>
+                <span class="metric-label">Above Target</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-5 d-none d-lg-block">
-            <div class="position-relative float-animation">
-              <img src="assets/Headshot.jpeg" alt="Tamara Palmer" class="img-fluid rounded-circle shadow-lg" style="max-width: 400px;" onerror="this.style.display='none'">
-              <!-- Decorative elements -->
-              <div class="position-absolute top-0 start-0 translate-middle" style="width: 100px; height: 100px; background: var(--accent); opacity: 0.1; border-radius: 50%; filter: blur(40px);"></div>
-              <div class="position-absolute bottom-0 end-0 translate-middle" style="width: 150px; height: 150px; background: var(--accent); opacity: 0.1; border-radius: 50%; filter: blur(60px);"></div>
+
+            <!-- Brand Logos -->
+            <div class="brand-logos" data-scroll data-delay="400">
+              <span class="brand-badge">Amazon</span>
+              <span class="brand-badge">Verizon</span>
+              <span class="brand-badge">AAA Auto Club</span>
+              <span class="brand-badge">Northeastern University</span>
+              <span class="brand-badge">BrainStation</span>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex flex-wrap gap-3 justify-content-center mt-5" data-scroll data-delay="500">
+              <a href="projects.html" class="btn btn-primary btn-lg" data-magnetic>
+                <i class="bi bi-folder2-open me-2"></i>View My Work
+              </a>
+              <a href="contact.html" class="btn btn-secondary btn-lg" data-magnetic>
+                <i class="bi bi-envelope me-2"></i>Let's Talk
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-5 d-flex gap-3 justify-content-center" data-scroll data-delay="600">
+              <a href="https://github.com/palmert974" target="_blank" class="text-muted-2 fs-5" title="GitHub" style="transition: all 0.3s ease;">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tamara-palmer-" target="_blank" class="text-muted-2 fs-5" title="LinkedIn" style="transition: all 0.3s ease;">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="mailto:TamaraPalmer013@yahoo.com" class="text-muted-2 fs-5" title="Email" style="transition: all 0.3s ease;">
+                <i class="bi bi-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
-        
       </div>
     </header>
 
     <!-- Currently Building Section -->
-    <section class="py-4" style="background: rgba(14,17,19,0.9); border-top: 1px solid rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.04);">
+    <section class="py-4" style="background: rgba(14,17,19,0.9); border-top: 1px solid rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.04);" data-scroll>
       <div class="container">
         <div class="row align-items-center justify-content-between g-3">
           <div class="col-auto">
@@ -199,10 +332,6 @@
                 <i class="bi bi-database-fill text-accent"></i>
                 <span class="small text-muted-2">SSIS package for SQL Server reporting table</span>
               </div>
-              <div class="d-flex align-items-center gap-2 d-none d-lg-flex">
-                <i class="bi bi-bar-chart-fill text-accent"></i>
-                <span class="small text-muted-2">Tableau dashboard feeds via SharePoint</span>
-              </div>
             </div>
           </div>
           <div class="col-auto">
@@ -212,88 +341,56 @@
       </div>
     </section>
 
-    <!-- Highlights/Gallery Section with Carousel -->
-    <section class="py-5" style="background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.08), transparent), radial-gradient(800px 300px at 95% 0%, rgba(212,31,42,0.06), transparent);">
+    <!-- Highlights/Gallery Section -->
+    <section class="py-5" id="highlights" style="background: radial-gradient(1200px 400px at 5% -20%, rgba(212,31,42,0.08), transparent)" data-scroll>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <h2 class="display-6 fw-bold mb-4 text-center text-white">
-              Highlights
+            <h2 class="display-6 fw-bold mb-4 text-center text-white" style="font-family: var(--font-serif);">
+              Featured Work
             </h2>
             <div class="mx-auto mb-5" style="width: 80px; height: 4px; background: var(--accent); border-radius: 2px;"></div>
+            
             <div id="highlightsCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
               <div class="carousel-inner">
-                <!-- WOS Program Slide -->
                 <div class="carousel-item active">
                   <div class="card border-0 mx-auto" style="max-width: 600px; background: rgba(14, 17, 19, 0.8) !important;">
-                    <img src="assets/WOS.jpeg" class="card-img-top" alt="Workforce Opportunity Services Program" style="height: 400px; object-fit: cover;">
+                    <img src="assets/WOS.jpeg" class="card-img-top" alt="Workforce Opportunity Services" style="height: 400px; object-fit: cover;">
                     <div class="card-body text-center p-4">
-                      <h5 class="card-title fw-bold fs-4">Workforce Opportunity Services</h5>
-                      <p class="card-text text-muted-2">Building enterprise applications and collaborating with Fortune 500 companies.</p>
+                      <h5 class="card-title fw-bold fs-4">Enterprise Development</h5>
+                      <p class="card-text text-muted-2">Building full-stack features with C#/.NET and React at Fortune 500 companies.</p>
                     </div>
                   </div>
                 </div>
-
-                <!-- AfroTech Conference Slide -->
                 <div class="carousel-item">
                   <div class="card border-0 mx-auto" style="max-width: 600px; background: rgba(14, 17, 19, 0.8) !important;">
                     <img src="assets/AfroTech.jpeg" class="card-img-top" alt="AfroTech Conference" style="height: 400px; object-fit: cover;">
                     <div class="card-body text-center p-4">
-                      <h5 class="card-title fw-bold fs-4">AfroTech 2024</h5>
-                      <p class="card-text text-muted-2">Connecting with industry leaders and exploring emerging technologies.</p>
+                      <h5 class="card-title fw-bold fs-4">Speaking & Mentorship</h5>
+                      <p class="card-text text-muted-2">Sharing knowledge at tech conferences and guiding junior developers.</p>
                     </div>
                   </div>
                 </div>
-
-                <!-- Global Experience Slide -->
                 <div class="carousel-item">
                   <div class="card border-0 mx-auto" style="max-width: 600px; background: rgba(14, 17, 19, 0.8) !important;">
-                    <img src="assets/Global.jpeg" class="card-img-top" alt="Global Perspective" style="height: 400px; object-fit: cover;">
+                    <img src="assets/Global.jpeg" class="card-img-top" alt="Global Experience" style="height: 400px; object-fit: cover;">
                     <div class="card-body text-center p-4">
-                      <h5 class="card-title fw-bold fs-4">Global Perspective</h5>
-                      <p class="card-text text-muted-2">Leveraging cross-cultural insights for innovative problem-solving.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Graduation Slide -->
-                <div class="carousel-item">
-                  <div class="card border-0 mx-auto" style="max-width: 600px; background: rgba(14, 17, 19, 0.8) !important;">
-                    <img src="assets/Graduationpic.webp" class="card-img-top" alt="Graduation Day" style="height: 400px; object-fit: cover;">
-                    <div class="card-body text-center p-4">
-                      <h5 class="card-title fw-bold fs-4">Graduation</h5>
-                      <p class="card-text text-muted-2">Celebrating a milestone as one of Northeastern Miami’s first graduates.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Portrait Slide -->
-                <div class="carousel-item">
-                  <div class="card border-0 mx-auto" style="max-width: 600px; background: rgba(14, 17, 19, 0.8) !important;">
-                    <img src="assets/Tamara.webp" class="card-img-top" alt="Tamara Palmer Portrait" style="height: 400px; object-fit: cover;">
-                    <div class="card-body text-center p-4">
-                      <h5 class="card-title fw-bold fs-4">In Focus</h5>
-                      <p class="card-text text-muted-2">Driven by curiosity, passion, and continuous learning.</p>
+                      <h5 class="card-title fw-bold fs-4">Cross-Cultural Impact</h5>
+                      <p class="card-text text-muted-2">Leveraging global experience to build inclusive, scalable solutions.</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Carousel Controls -->
               <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
                 <i class="bi bi-chevron-left fs-1"></i>
-                <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
                 <i class="bi bi-chevron-right fs-1"></i>
-                <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
@@ -301,213 +398,59 @@
       </div>
     </section>
 
-    <!-- Experience Timeline Section -->
-    <section id="timeline" class="py-5" style="background: radial-gradient(1200px 400px at 95% -20%, rgba(212,31,42,0.08), transparent), radial-gradient(800px 300px at 5% 0%, rgba(212,31,42,0.06), transparent);">
+    <!-- Skills Showcase -->
+    <section class="py-5" style="background: rgba(14,17,19,0.95);" data-scroll>
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-10">
-            <h2 class="display-6 fw-bold mb-4 text-center text-white">
-              My Journey
-            </h2>
-            <div class="mx-auto mb-5" style="width: 80px; height: 4px; background: var(--accent); border-radius: 2px;"></div>
-            <div class="position-relative" style="padding: 0 15px;">
-              <!-- Timeline line -->
-              <div class="position-absolute start-50 translate-middle-x d-none d-md-block" style="width: 3px; height: 100%; background: linear-gradient(to bottom, var(--accent), transparent); opacity: 0.5; border-radius: 2px;"></div>
-              
-              <!-- Timeline items -->
-              <div class="timeline-container">
-                <!-- Current Contract Position -->
-                <div class="row mb-4">
-                  <div class="col-md-6 text-md-end">
-                    <div class="timeline-card">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center justify-content-md-end mb-3">
-                            <span class="badge bg-accent me-2">Current</span>
-                            <h5 class="h6 fw-bold mb-0">Oct 2025 - Present</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Associate DevOps Engineer</h4>
-                          <p class="fw-semibold text-accent mb-2">AAA Auto Club Enterprises (Contract via WOS)</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Build and debug full-stack features in C#/.NET and JavaScript/React</li>
-                            <li>Automate daily data pulls with Python delta-logic scripts</li>
-                            <li>Co-developing SSIS packages for SQL Server reporting</li>
-                            <li>Maintain Tableau dashboard feeds via SharePoint</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
+        <h2 class="display-6 fw-bold mb-4 text-center text-white" style="font-family: var(--font-serif);">
+          Skills & Tools
+        </h2>
+        <div class="mx-auto mb-5" style="width: 80px; height: 4px; background: var(--accent); border-radius: 2px;"></div>
+        
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-scroll data-delay="0">
+            <div class="card border-0 h-100" style="background: rgba(21, 26, 29, 0.8); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 30px rgba(212,31,42,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-white mb-3">
+                  <i class="bi bi-code-slash text-accent me-2"></i>Backend & DevOps
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-secondary">C#/.NET</span>
+                  <span class="badge bg-secondary">Python</span>
+                  <span class="badge bg-secondary">Node.js</span>
+                  <span class="badge bg-secondary">SQL Server</span>
+                  <span class="badge bg-secondary">SSIS</span>
                 </div>
-
-                <!-- WOS Position -->
-                <div class="row mb-4">
-                  <div class="col-md-6 offset-md-6">
-                    <div class="timeline-card timeline-right">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-briefcase-fill text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Jun 2025 - Present</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Junior Software Developer</h4>
-                          <p class="fw-semibold text-accent mb-2">Workforce Opportunity Services</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Completed immersive 3-month software development training</li>
-                            <li>Build full-stack features and REST APIs with C#/.NET and React</li>
-                            <li>Agile/Scrum sprints — story estimation and iterative delivery</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-scroll data-delay="100">
+            <div class="card border-0 h-100" style="background: rgba(21, 26, 29, 0.8); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 30px rgba(212,31,42,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-white mb-3">
+                  <i class="bi bi-palette text-accent me-2"></i>Frontend
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-secondary">React</span>
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">HTML/CSS</span>
+                  <span class="badge bg-secondary">Bootstrap</span>
+                  <span class="badge bg-secondary">Responsive Design</span>
                 </div>
-
-                <!-- Northeastern Degree -->
-                <div class="row mb-4">
-                  <div class="col-md-6 text-md-end">
-                    <div class="timeline-card">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center justify-content-md-end mb-3">
-                            <i class="bi bi-mortarboard-fill text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">December 2024</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">B.S. Information Technology</h4>
-                          <p class="fw-semibold text-accent mb-2">Northeastern University</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>GPA: 3.7/4.0 — Dean's List</li>
-                            <li>First Graduate of Miami Campus</li>
-                            <li>Focus: Software Development &amp; Data Analytics</li>
-                            <li>Global Recreational Ambassador (Sep–Dec 2024)</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- BrainStation -->
-                <div class="row mb-4">
-                  <div class="col-md-6 offset-md-6">
-                    <div class="timeline-card timeline-right">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-award-fill text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Feb – May 2023</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Software Engineering Bootcamp</h4>
-                          <p class="fw-semibold text-accent mb-2">BrainStation</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Chase Scholarship recipient (Top 25%)</li>
-                            <li>GPA 4.0 — React, Node.js, JavaScript, MySQL</li>
-                            <li>15+ Agile user stories across full-stack projects</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Visio Lending -->
-                <div class="row mb-4">
-                  <div class="col-md-6 text-md-end">
-                    <div class="timeline-card">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center justify-content-md-end mb-3">
-                            <i class="bi bi-graph-up text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Feb 2022 – Jun 2025</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Quality Analyst</h4>
-                          <p class="fw-semibold text-accent mb-2">Visio Lending</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Reviewed 5,200+ loan files annually at 99.8% accuracy</li>
-                            <li>Automated workflows in Salesforce &amp; Excel — cut processing 35%</li>
-                            <li>Cross-functional liaison: compliance, legal, and dev teams</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- United Wholesale Mortgage -->
-                <div class="row mb-4">
-                  <div class="col-md-6 offset-md-6">
-                    <div class="timeline-card timeline-right">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-graph-up text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Jan 2021 – Feb 2022</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Mortgage Underwriter / Analyst</h4>
-                          <p class="fw-semibold text-accent mb-2">United Wholesale Mortgage</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Underwrote residential mortgage files at the nation's #1 wholesale lender</li>
-                            <li>Ran automated underwriting through DU and LP systems</li>
-                            <li>Analyzed income, asset, and credit docs in Excel &amp; Salesforce</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Verizon -->
-                <div class="row mb-4">
-                  <div class="col-md-6 text-md-end">
-                    <div class="timeline-card">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center justify-content-md-end mb-3">
-                            <i class="bi bi-telephone-fill text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Feb 2019 – Dec 2020</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Technical Analyst</h4>
-                          <p class="fw-semibold text-accent mb-2">Verizon</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Technical training and onboarding for 50+ business clients</li>
-                            <li>Exceeded performance targets by 120%</li>
-                            <li>Bridge between customers and engineering via Salesforce &amp; ServiceNow</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Amazon -->
-                <div class="row mb-4">
-                  <div class="col-md-6 offset-md-6">
-                    <div class="timeline-card timeline-right">
-                      <div class="card border-0 h-100 hover-lift" style="background: rgba(14, 17, 19, 0.85) !important; border: 1px solid rgba(255,255,255,0.05);">
-                        <div class="card-body p-4">
-                          <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-box-seam-fill text-accent fs-4 me-2"></i>
-                            <h5 class="h6 fw-bold mb-0">Oct 2015 – Feb 2019</h5>
-                          </div>
-                          <h4 class="h5 fw-bold mb-2 text-white">Technical Analyst</h4>
-                          <p class="fw-semibold text-accent mb-2">Amazon</p>
-                          <ul class="small text-light mb-0 ps-3">
-                            <li>Technical support for 1,000+ clients at 98% issue-resolution rate</li>
-                            <li>Drove process improvements in inventory management</li>
-                            <li>Built knowledge-base resources, improving team response times</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="timeline-dot d-none d-md-block"></div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-scroll data-delay="200">
+            <div class="card border-0 h-100" style="background: rgba(21, 26, 29, 0.8); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 30px rgba(212,31,42,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-white mb-3">
+                  <i class="bi bi-gear text-accent me-2"></i>Tools & Platforms
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-secondary">Git</span>
+                  <span class="badge bg-secondary">AWS</span>
+                  <span class="badge bg-secondary">Azure</span>
+                  <span class="badge bg-secondary">Tableau</span>
+                  <span class="badge bg-secondary">Agile/Scrum</span>
                 </div>
               </div>
             </div>
@@ -516,12 +459,37 @@
       </div>
     </section>
 
-    <footer class="footer bg-elevated border-top border-dark-subtle mt-5">
-      <div class="container py-4">
+    <!-- CTA Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, rgba(212,31,42,0.15) 0%, rgba(212,31,42,0.05) 100%);" data-scroll>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="display-6 fw-bold text-white mb-4" style="font-family: var(--font-serif);">
+              Let's Build Something Great
+            </h2>
+            <p class="lead text-muted-2 mb-4">
+              I'm always interested in hearing about new projects and opportunities.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+              <a href="contact.html" class="btn btn-primary btn-lg" data-magnetic>
+                Start a Conversation
+              </a>
+              <a href="assets/TamaraPalmer_Resume.pdf" download class="btn btn-secondary btn-lg">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-elevated border-top border-dark-subtle mt-5" style="border-color: rgba(255,255,255,0.1) !important;">
+      <div class="container py-5">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <div class="d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
-              <span class="fw-semibold text-white">Tamara Palmer</span>
+              <span class="fw-semibold text-white" style="font-family: var(--font-serif); font-size: 1.1rem;">Tamara Palmer</span>
               <span class="text-muted-2">• Software Engineer</span>
             </div>
             <div class="small text-muted-2">© <span id="year"></span> All rights reserved.</div>
@@ -544,6 +512,6 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="animation.js"></script>
   </body>
 </html>
